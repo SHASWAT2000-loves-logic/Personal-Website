@@ -1,9 +1,10 @@
+// About component contains the content in the about section of the website
+
 import {FaLinkedin, FaGithub} from "react-icons/fa"
-// import {SiGmail} from "react-icons/si"
 function About() {
   return (
-    <div className="about_section">
-      <h1>Shaswat Shukla</h1>
+    <div className="about_section" id="about">
+      <h1 className="bold_name">Shaswat Shukla</h1>
       {/* Maybe add email here and remove contact me section */}
       <p className="short_intro">Undergraduate CS student @ University of New Mexico</p>
       <a href="#" ><FaLinkedin className="about_icons"/></a>
@@ -12,7 +13,7 @@ function About() {
       <br />
       <p>Apart from web technologies, I have experience using Python and its libraries like NumPy, SciPy and MatplotLib. Recently, I also had the opportunity to gain some experience in machine learning as well, where I mostly used TensorFlow for training models.</p>
       <br />
-      <p>Currently, I am looking for full-time job opportunities in web development to apply my knowledge on real-world projects and gain new and valuable experience in my field. </p>
+      <p className="opportunities">Currently, I am looking for full-time job opportunities in web development to apply my knowledge on real-world projects and gain new and valuable experience in my field. </p>
       {/* Add the resume here */}
     </div>
   )

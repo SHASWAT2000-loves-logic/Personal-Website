@@ -1,10 +1,14 @@
+/* This is the global stylesheet that controls the styling of all individual components in the website */
+
+/* importing Roboto font for use in the content section */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* importing JetBrains Mono font */
+/* importing JetBrains Mono font for use only on the links in the sidebar component*/
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto&display=swap');
 
-/* CSS reset */
+/* Resetting */
 
 *{
   margin:0;
@@ -24,10 +28,9 @@ a{
   text-decoration: none;
 }
 
-/* TODO - Get rid of the height, select a font family for the content section */
+/* General styling for all the content */
 
 body{
-  height:2000px;
   background-color: #f1f1f1; 
   font-family: 'Roboto', sans-serif;
   line-height: 1.8;
@@ -70,38 +73,65 @@ img{
 
 /* Styling the individual links */
 
-.navbar a{
+.navbar li{
   color:rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 
 /* implementing the hover effect on links */
 
-.navbar a:hover{
+.navbar li:hover{
   color:#f1f1f1;
 }
 
-/* TODO - style the content section */
+/* All p tags have a general font size */
+
 p{
   font-size: 18px;
 }
+
+/* h1 tags are used as the main heading of each component */
+
 h1{
   font-size: 56px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   color: #BD5D38;
 }
+
+/* From here the styling for the content on the right hand side starts */
+
+.bold_name{
+  margin-bottom: 0px;
+}
+
+/* Styling the container that contains the components */
+
 .main_content{
   margin-left: 300px;
   padding:80px 48px;
 }
 
-.about_section{
+/* Generalized styling for every component*/
+
+.about_section, 
+.education_section, 
+.experience_section, 
+.awards_section
+{
   margin-bottom: 100px;
+  border-bottom: 1px dotted;
+  padding-bottom: 30px;
 }
+
+/* About section styling starts */
 
 .short_intro{
   font-size: 28px;
   margin-bottom: 20px;
 }
+
+/* Styling the font awesome icons */
+
 .about_icons{
   font-size: 56px;
   border-radius: 50%;
@@ -111,10 +141,22 @@ h1{
   color:white;
   margin-bottom: 20px;
 }
+
+/* Hover effect on icons */
+
 .about_icons:hover{
   color: white;
   background-color: brown;
 }
+
+.opportunities{
+  padding-bottom: 100px;
+}
+
+/* Education section styling starts */
+
+/* Positioning the content */
+
 .edu_flex{
   display: flex;
   justify-content: space-between;
@@ -122,14 +164,80 @@ h1{
 .edu_flex h3{
   font-size: 20px;
 }
+
+/* Styling the icon in education section */
+
 .edu_icon{
-  margin-right: 20px;
+  margin-right: 12px;
 }
 .edu_content{
-  margin-left: 46px;
+  margin-left: 37px;
 }
 .edu_list{
   list-style-type: circle;
   margin-left: 17px;
   line-height: 1.4;
+  padding-bottom: 100px;
+}
+
+/* Experience section styling starts */
+
+/* card contains the each individual experience */
+
+.card{
+  padding:30px 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 2px #f0f0f0;
+  box-shadow: 0 0 2px #f0f0f0;
+  margin-bottom: 80px;
+}
+
+/* positioning the elements in the card components */
+
+.card_grid{
+  display: grid;
+  grid-template-columns: 3fr 1.3fr;
+  margin-bottom: 40px;
+}
+
+.position{
+  font-size: 34px;
+  color: #1A73E8;
+}
+.location, 
+.dates
+{
+  font-size: 18px;
+}
+.company{
+  font-size: 22px;
+}
+
+/* Styling the icons in the experience section  */
+
+.card_icon{
+  margin-top: 15px;
+  margin-right: 7px;
+  font-size: 18px;
+}
+.position_description{
+  list-style-type: disc;
+  margin-left: 17px;
+  font-size: 18px;
+}
+
+/* Award section styling starts */
+
+.highlighted{
+  color: #BD5D38;
+}
+.award_icon{
+  margin-right: 10px;
+}
+
+/* Styling the link to the component where the user is currently */
+
+.active_link{
+  color:#f1f1f1!important
 }
