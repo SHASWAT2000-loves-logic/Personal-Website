@@ -4,4 +4,6 @@
 
 **Frameworks/Libraries** - React
 
-**First Commit (09/05/2022)** - Added the sidebar
+**First Commit (09/05/2022)** - Added the sidebar component
+
+**Second Commit (09/05/2022)** - Added the about and education component
