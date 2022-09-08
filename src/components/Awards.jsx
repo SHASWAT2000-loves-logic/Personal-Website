@@ -1,4 +1,4 @@
-// Aeards component contains the content in the awards section of the website
+// Awards component contains the content in the awards section of the website
 
 import {FaMedal} from "react-icons/fa"
 function Awards() {

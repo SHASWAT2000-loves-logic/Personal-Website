@@ -116,7 +116,8 @@ h1{
 .about_section, 
 .education_section, 
 .experience_section, 
-.awards_section
+.awards_section, 
+.news_section
 {
   margin-bottom: 100px;
   border-bottom: 1px dotted;
@@ -124,6 +125,10 @@ h1{
 }
 
 /* About section styling starts */
+
+.about_section{
+  padding-bottom: 80px;
+}
 
 .short_intro{
   font-size: 28px;
@@ -137,21 +142,40 @@ h1{
   border-radius: 50%;
   padding:10px;
   margin-right: 60px;
-  background-color: black;
-  color:white;
+  background-color: #333;
+  color:#fff;
   margin-bottom: 20px;
 }
 
 /* Hover effect on icons */
 
 .about_icons:hover{
-  color: white;
-  background-color: brown;
+  color: #fff;
+  background-color: #BD5D38;
 }
 
 .opportunities{
-  padding-bottom: 100px;
+  margin-bottom: 50px;
 }
+
+/* Styling the link to the resume */
+
+.resume{
+  font-size: 22px;
+}
+.resume::after{
+  content: "";
+  display: block;
+  width:0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.35s;
+}
+.resume:hover::after{
+  width: 7%;
+  transition: width 0.35s;
+}
+
 
 /* Education section styling starts */
 
@@ -237,7 +261,21 @@ h1{
 }
 
 /* Styling the link to the component where the user is currently */
-
 .active_link{
-  color:#f1f1f1!important
+  color:#f1f1f1;
+}
+
+.news_section, 
+.awards_section
+{
+  padding-bottom: 100px;
+}
+.news_grid{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-bottom: 10px;
+}
+.news_icon{
+  padding-top: 5px;
+  font-size: 22px;
 }
