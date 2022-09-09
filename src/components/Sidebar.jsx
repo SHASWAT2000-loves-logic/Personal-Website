@@ -5,13 +5,14 @@ import {Link} from "react-scroll"
 
 function Sidebar() {
 
-  // we have 5 states for links to each individual component
+  // we have 6 states for links to each individual component
 
   const [link1, setLink1] = useState(true);
   const [link2, setLink2] = useState(false);
   const [link3, setLink3] = useState(false);
   const [link4, setLink4] = useState(false);
   const [link5, setLink5] = useState(false);
+  const [link6, setLink6] = useState(false);
   
    // By checking the scroll position of the user, we will highlight the link to the component the user is in
 
@@ -23,14 +24,16 @@ function Sidebar() {
       setLink3(false);
       setLink4(false);
       setLink5(false);
+      setLink6(false);
     }
     // user in education section
-    else if(window.scrollY>680 && window.scrollY<1070){
+    else if(window.scrollY>570 && window.scrollY<1070){
       setLink1(false);
       setLink2(true);
       setLink3(false);
       setLink4(false);
       setLink5(false);
+      setLink6(false);
     }
     //user in experience section
     else if(window.scrollY>=1070 && window.scrollY<3300){
@@ -39,6 +42,7 @@ function Sidebar() {
       setLink3(true);
       setLink4(false);
       setLink5(false);
+      setLink6(false);
     }
     // user in news and updates section
     else if(window.scrollY>=3300 && window.scrollY<3950){
@@ -47,18 +51,29 @@ function Sidebar() {
       setLink3(false);
       setLink4(true);
       setLink5(false);
+      setLink6(false);
     }
     //user in awards section
-    else if(window.scrollY>=3950){
+    else if(window.scrollY>=3950 && window.scrollY<4300){
       setLink1(false);
       setLink2(false);
       setLink3(false);
       setLink4(false);
       setLink5(true);
+      setLink6(false);
+    }
+    // user in contact section
+    else if(window.scrollY>=4300){
+      setLink1(false);
+      setLink2(false);
+      setLink3(false);
+      setLink4(false);
+      setLink5(false);
+      setLink6(true);
     }
   }
 
-  // event listner to handle the scroll event.  
+  // event listner to catch the scroll event. On the basis of scrollY, we will determine the component the user is in
 
   window.addEventListener("scroll", changeNavbarColor);
   
@@ -72,6 +87,7 @@ function Sidebar() {
           <li><Link activeClass="active" to="experience" spy={true} smooth={true} offset={-50} duration={1000} className={`${link3 && "active_link"}`}>Experience</Link></li>
           <li><Link activeClass="active" to="news" spy={true} smooth={true} offset={-50} duration={1000} className={`${link4 && "active_link"}`}>News</Link></li>
           <li><Link activeClass="active" to="awards" spy={true} smooth={true} offset={-50} duration={1000} className={`${link5 && "active_link"}`}>Awards</Link></li>
+          <li><Link activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={1000} className={`${link6 && "active_link"}`}>Contact</Link></li>
         </ul>
       </nav>
     </div>

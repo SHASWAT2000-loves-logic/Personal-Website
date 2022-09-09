@@ -117,12 +117,21 @@ h1{
 .education_section, 
 .experience_section, 
 .awards_section, 
-.news_section
+.news_section, 
+.contact_section
 {
   margin-bottom: 100px;
   border-bottom: 1px dotted;
   padding-bottom: 30px;
 }
+
+/* Styling the link to the component where the user is currently */
+/* This is dynamically done using JavaScript */
+
+.active_link{
+  color:#f1f1f1;
+}
+
 
 /* About section styling starts */
 
@@ -163,12 +172,15 @@ h1{
 .resume{
   font-size: 22px;
 }
+
+/* Creating the hover animation */
+
 .resume::after{
   content: "";
   display: block;
   width:0;
   height: 2px;
-  background-color: #333;
+  background-color: #BD5D38;
   transition: width 0.35s;
 }
 .resume:hover::after{
@@ -225,6 +237,8 @@ h1{
   margin-bottom: 40px;
 }
 
+/* Styling the grid items */
+
 .position{
   font-size: 34px;
   color: #1A73E8;
@@ -256,14 +270,13 @@ h1{
 .highlighted{
   color: #BD5D38;
 }
+
 .award_icon{
   margin-right: 10px;
 }
 
-/* Styling the link to the component where the user is currently */
-.active_link{
-  color:#f1f1f1;
-}
+
+/* Awards section styling starts */
 
 .news_section, 
 .awards_section
@@ -275,7 +288,80 @@ h1{
   grid-template-columns: 1fr 5fr;
   margin-bottom: 10px;
 }
+
+/* Styling the news icon */
+
 .news_icon{
   padding-top: 5px;
   font-size: 22px;
+}
+
+/* Styling the contact form section */
+
+.contact_section{
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.contact_content{
+  padding: 0px 110px;
+}
+.input_group{
+  margin-bottom: 50px;
+}
+label{
+  font-size: 18px;
+}
+
+/* Styling the input fields */
+
+input, textarea{
+  display: block;
+  margin-top: 4px;
+  padding: 10px 12px;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Styling the focus state of the input fields */
+
+input:focus, textarea:focus{
+  outline: none;
+  border: 2px solid #BD5D38;
+}
+
+/* Styling the submit button of the form */
+
+.submit_btn{
+  border: none;
+  text-align: center;
+  display: inline-block;
+  background-color: #0a0a23;
+  color: #fff;
+  min-height: 30px;
+  min-width: 120px;
+  padding:15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+}
+.submit_btn:hover{
+  background-color:#002ead;
+  transition: 0.7s;
+  box-shadow: none;
+}
+
+/* Removing the default browser style when the user presses tab to reach the submit button */
+
+.submit_btn:focus {
+  outline: none;
+}
+
+/* Styling the error when the user input is invalid */
+
+.error_message{
+  color: red;
+  margin-top: 10px; 
 }
