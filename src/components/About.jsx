@@ -6,7 +6,6 @@ function About() {
   return (
     <div className="about_section" id="about">
       <h1 className="bold_name">Shaswat Shukla</h1>
-      {/* Maybe add email here and remove contact me section */}
       <p className="short_intro">Undergraduate CS student @ University of New Mexico</p>
       <a href="http://linkedin.com/in/shaswat-shukla/" target="_blank"><FaLinkedin className="about_icons"/></a>
       <a href="https://github.com/SHASWAT2000-loves-logic" target="_blank"><FaGithub className="about_icons"/></a> 

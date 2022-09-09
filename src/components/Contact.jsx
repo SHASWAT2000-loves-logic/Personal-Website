@@ -56,75 +56,76 @@ function Contact() {
   };
   return (
     <div className='contact_section' id='contact'>
-        <h1>Contact Me</h1>
-        <div className='contact_form'>
+      <h1>Contact Me</h1>
+      <div className='contact_form'>
 
-            {/* form starts */}
+      {/* form starts */}
 
-            <form onSubmit={handleSubmit(onSubmit)} noValidate>
+        <form onSubmit={handleSubmit(onSubmit)} noValidate>
 
-            {/* Name of person who is contacting */}
+        {/* Name of person who is contacting */}
 
-                <div className='contact_content'>
-                    <div className='input_group'>
-                        <label htmlFor="name">Name</label>
-                        <input type="text" name="name" placeholder="Your name" className='name'
-                        {...register('name', {
-                            required: { value: true, message: 'Please enter your name' },
-                            maxLength: {
-                            value: 30,
-                            message: 'Please use 30 characters or less'
-                            }
-                        })}
-                        />
-                        {errors.name && <div className='error_message'>{errors.name.message}</div>}
-                    </div>
+          <div className='contact_content'>
+            <div className='input_group'>
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" placeholder="Your name" className='name'
+                {...register('name', {
+                required: { value: true, message: 'Please enter your name' },
+                maxLength: {
+                value: 30,
+                message: 'Please use 30 characters or less'
+                }
+                })}
+              />
+              {errors.name && <div className='error_message'>{errors.name.message}</div>}
+            </div>
 
-                    {/* Email of person who is contacting */}
+            {/* Email of person who is contacting */}
 
-                    <div className='input_group'>
-                        <label htmlFor="email">Email</label>
-                        <input type="email" name="email" placeholder="Your email" className='email'
-                        {...register('email', {
-                            required: true,
-                            pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-                        })}
-                        />
-                        {errors.email && (<div className='error_message'>Please enter a valid email address</div>)}
-                    </div>
+            <div className='input_group'>
+              <label htmlFor="email">Email</label>
+              <input type="email" name="email" placeholder="Your email" className='email'
+                {...register('email', {
+                required: true,
+                pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                })}
+              />
+              {errors.email && (<div className='error_message'>Please enter a valid email address</div>)}
+            </div>
 
-                    {/* Subject of the message  */}
+            {/* Subject of the message  */}
 
-                    <div className='input_group'>
-                        <label htmlFor="subject">Subject</label>
-                        <input type="text" name="subject" placeholder="Subject"
-                        {...register('subject', {
-                            required: { value: true, message: 'Please enter a subject' },
-                            maxLength: {
-                            value: 75,
-                            message: 'Subject cannot exceed 75 characters'
-                            }
-                        })}
-                        />
-                        {errors.subject && (<div className='error_message'>{errors.subject.message}</div>)}
-                    </div>
+            <div className='input_group'>
+              <label htmlFor="subject">Subject</label>
+              <input type="text" name="subject" placeholder="Subject"
+                {...register('subject', {
+                required: { value: true, message: 'Please enter a subject' },
+                maxLength: {
+                value: 75,
+                message: 'Subject cannot exceed 75 characters'
+                }
+                })}
+              />
+              {errors.subject && (<div className='error_message'>{errors.subject.message}</div>)}
+            </div>
             
-                    {/* Message */}
+            {/* Message */}
 
-                    <div className='input_group'>
-                        <label htmlFor="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" 
-                        {...register('message', {
-                            required: true
-                        })}
-                        ></textarea>
-                        {errors.message && <div className='error_message'>Please enter a message</div>}
-                    </div>
-                    <button type="submit" className='submit_btn'>Send Message</button>
-                </div>
-            </form>
-            <ToastContainer/> 
-        </div>
+            <div className='input_group'>
+              <label htmlFor="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" 
+                {...register('message', {
+                required: true
+                })}
+              ></textarea>
+              {errors.message && <div className='error_message'>Please enter a message</div>}
+            </div>
+              
+            <button type="submit" className='submit_btn'>Send Message</button>
+          </div>
+        </form>
+        <ToastContainer/> 
+      </div>
     </div>
   )
 }

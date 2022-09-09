@@ -14,7 +14,7 @@ function Sidebar() {
   const [link5, setLink5] = useState(false);
   const [link6, setLink6] = useState(false);
   
-   // By checking the scroll position of the user, we will highlight the link to the component the user is in
+  // By checking the scroll position of the user, we will highlight the link to the component the user is in
 
   const changeNavbarColor =() =>{
     // user in about section
