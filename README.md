@@ -17,3 +17,5 @@
 **Second commit (09/05/2022)** - Added the about and education component
 
 **Third commit (09/06/2022)** - Added the experience, awards component. Also added the smooth scroll effect to the website using the react-scroll package
+
+**Fourth commit (09/07/2022)** - Added the awards section, provided links to resume, linkedin and github 
