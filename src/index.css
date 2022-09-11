@@ -30,10 +30,11 @@ a{
 
 /* General styling for all the content */
 
-body{
+html,body{
   background-color: #f1f1f1; 
   font-family: 'Roboto', sans-serif;
   line-height: 1.8;
+  /* scroll-behavior: smooth; */
 }
 
 /* Sidebar is positioned fixed at the left side */
@@ -121,15 +122,15 @@ h1{
 .contact_section
 {
   margin-bottom: 100px;
+  margin-right: 40px;
   border-bottom: 1px dotted;
   padding-bottom: 30px;
 }
 
 /* Styling the link to the component where the user is currently */
-/* This is dynamically done using JavaScript */
 
-.active_link{
-  color:#f1f1f1;
+.active{
+  color: #f1f1f1;
 }
 
 
@@ -137,6 +138,7 @@ h1{
 
 .about_section{
   padding-bottom: 80px;
+  text-align: left;
 }
 
 .short_intro{
@@ -226,6 +228,7 @@ h1{
   border-radius: 8px;
   -webkit-box-shadow: 0 0 2px #f0f0f0;
   box-shadow: 0 0 2px #f0f0f0;
+  margin-right: 60px;
   margin-bottom: 80px;
 }
 
@@ -233,7 +236,7 @@ h1{
 
 .card_grid{
   display: grid;
-  grid-template-columns: 3fr 1.3fr;
+  grid-template-columns: 3fr 1fr;
   margin-bottom: 40px;
 }
 
@@ -364,4 +367,8 @@ input:focus, textarea:focus{
 .error_message{
   color: red;
   margin-top: 10px; 
+}
+
+.bold{
+  font-weight: bold;
 }
