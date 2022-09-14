@@ -17,13 +17,11 @@ import Experience from "./components/Experience";
 import News from "./components/News";
 import Awards from "./components/Awards";
 import Contact from "./components/Contact";
-import { useEffect } from "react";
 function App() {
   // when the page is refreshed the user will be directly taken to the top of the page
-  useEffect(() => {
+  window.onbeforeunload = () => {
     window.scrollTo(0, 0);
-  }, []);
-
+  };
   return (
     <div id="personal_website">
       <Sidebar />

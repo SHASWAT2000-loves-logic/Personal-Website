@@ -6,15 +6,14 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <nav>
-        <ul className="navbar">
+        <ul className="navbar" id="top_navbar">
           <img src={require("../images/Personal_Photo.png")} alt="Something went wrong" />
-          <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={1000}>About</Link></li>
-          <li><Link activeClass="active" to="education" spy={true} smooth={true} offset={0} duration={1000}>Education</Link></li>
-          <li><Link activeClass="active" to="experience" spy={true} smooth={true} offset={0} duration={1000}>Experience</Link></li>
-          <li><Link activeClass="active" to="news" spy={true} smooth={true} offset={0} duration={1000}>News</Link></li>
-          <li><Link activeClass="active" to="awards" spy={true} smooth={true} offset={0} duration={1000}>Awards</Link></li>
-          <li><Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={1000}>Contact</Link></li>
-         
+          <li><Link activeClass="active_link" to="about" spy={true} smooth={true} offset={-80} duration={1000} className="about_link">About</Link></li>
+          <li><Link activeClass="active_link" to="education" spy={true} smooth={true} offset={-80} duration={1000} className="education_link">Education</Link></li>
+          <li><Link activeClass="active_link" to="experience" spy={true} smooth={true} offset={-80} duration={1000} className="experience_link">Experience</Link></li>
+          <li><Link activeClass="active_link" to="news" spy={true} smooth={true} offset={-80} duration={1000} className="news_link">News</Link></li>
+          <li><Link activeClass="active_link" to="awards" spy={true} smooth={true} offset={-80} duration={1000} className="awards_link">Awards</Link></li>
+          <li><Link activeClass="active_link" to="contact" spy={true} smooth={true} offset={-80} duration={1000} className="contact_link">Contact</Link></li>
         </ul>
       </nav>
     </div>
