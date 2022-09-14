@@ -4,8 +4,9 @@
 2. About - general description about myself, my past experiences and looking ahead
 3. Education - my college name, GPA, expected graduation
 4. Experience - previous internships and jobs on campus
-5. Awards - previous awards
-6. Contact - to get in touch with me
+5. News - latest updates about my work
+6. Awards - previous awards
+7. Contact - to get in touch with me
 
 **Technologies Used** - HTML, CSS and JavaScript
 
@@ -19,29 +20,33 @@
 
 **External Services** - Emailjs - to receive email after the contact form is submitted, I used this external service. AFter the user has submitted the contact form, I will get an email with the all the information that the user has filled out in the input fields. 
 
-**Media Queries** - 
-a. Mobile devices - 320px - 480px
-b. iPads, Tablets - 481px - 768px
-c. Small screens, tablets - 769px - 1024px
-d. Desktop, large screens - >1024px
+**Media Queries** - For responsive web design there are separate CSS files for devices of different screen sizes
+
+a. Mobile devices - 320px - 480px (mobile.css)
+
+b. iPads, Tablets - 481px - 768px (tablets.css)
+
+c. Small screens, laptops - 769px - 1024px (laptops.css)
+
+d. Desktop, large screens - >1024px (index.css or the global stylesheet)
 
 **Commits** - 
 
-**First commit (09/05/2022)** - Added the sidebar component
+**First major commit (09/05/2022)** - Added the sidebar component
 
-**Second commit (09/05/2022)** - Added the about and education component
+**Second major commit (09/05/2022)** - Added the about and education component
 
-**Third commit (09/06/2022)** - Added the experience, awards component. Also added the smooth scroll effect to the website using the react-scroll package
+**Third major commit (09/06/2022)** - Added the experience, awards component. Also added the smooth scroll effect to the website using the react-scroll package
 
-**Fourth commit (09/07/2022)** - Added the awards section, provided links to resume, linkedin and github 
+**Fourth major commit (09/07/2022)** - Added the awards section, provided links to resume, linkedin and github 
 
-**Fifth commit (09/08/2022)** - Added the contact form component, used emailjs to receive email when the user contacts me through the website
+**Fifth major commit (09/08/2022)** - Added the contact form component, used emailjs to receive email when the user contacts me through the website
 
-**Sixth commit (09/09/2022)** -  Added the favicon, corrected indentation
+**Sixth major commit (09/09/2022)** -  Added the favicon, corrected indentation
 
-**Seventh commit (09/10/2022)** - Updated the content in the experience section, 
+**Seventh major commit (09/10/2022)** - Updated the content in the experience section, 
 
-**Eighth commit (09/13/2022)** - Added media queries for responsive website design. Media queries for screen sizes in range 481px - 767px and 768px - 1024px 
+**Eighth major commit (09/13/2022)** - Added media queries for responsive website design. Media queries for screen sizes in range 481px - 767px and 768px - 1024px 
 
 **Bugs/Issues** -  
 
