@@ -1,4 +1,4 @@
-**Description** - This repo contains the code for my personal website. The website has the following components - 
+**Description** - This repo contains the code for my personal website. The website has the following components for a user using any device other than smartphone- 
 
 1. Sidebar - positioned fixed to the left side
 2. About - general description about myself, my past experiences and looking ahead
@@ -7,6 +7,8 @@
 5. News - latest updates about my work
 6. Awards - previous awards
 7. Contact - to get in touch with me
+
+**Note** - There is an additional component, which only comes into play when the screen size is less than 480px or when the user is on mobile device.
 
 **Technologies Used** - HTML, CSS and JavaScript
 
@@ -17,6 +19,7 @@
 2. react-scroll - to provide the functionality of smooth scrolling within the website when links are clicked. This package is still growing and there might be some bugs that can go unnoticed. 
 3. react-hook-form - to validate user input in the contact form
 4. react-toastify - to provide notification after the form is successfully submitted. Mostly for good UX. After the user has submitted the form, a nice little notification will pop up on the bottom left corner of the screen and will be there for 5 seconds. 
+5. react-hamburger-menu - for creating a hamburger menu on mobile devices
 
 **External Services** - Emailjs - to receive email after the contact form is submitted, I used this external service. AFter the user has submitted the contact form, I will get an email with the all the information that the user has filled out in the input fields. 
 
@@ -29,6 +32,7 @@ b. iPads, Tablets - 481px - 768px (tablets.css)
 c. Small screens, laptops - 769px - 1024px (laptops.css)
 
 d. Desktop, large screens - >1024px (index.css or the global stylesheet)
+
 
 **Commits** - 
 
@@ -47,6 +51,8 @@ d. Desktop, large screens - >1024px (index.css or the global stylesheet)
 **Seventh major commit (09/10/2022)** - Updated the content in the experience section, 
 
 **Eighth major commit (09/13/2022)** - Added media queries for responsive website design. Media queries for screen sizes in range 481px - 767px and 768px - 1024px 
+
+**Ninth major commit (09/14/2022)** - Added media query for mobile devices. Created a hamburger menu of links for mobile devices
 
 **Bugs/Issues** -  
 
