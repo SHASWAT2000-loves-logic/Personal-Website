@@ -4,8 +4,9 @@
 2. About - general description about myself, my past experiences and looking ahead
 3. Education - my college name, GPA, expected graduation
 4. Experience - previous internships and jobs on campus
-5. Awards - previous awards
-6. Contact - to get in touch with me
+5. News - latest updates about my work
+6. Awards - previous awards
+7. Contact - to get in touch with me
 
 **Technologies Used** - HTML, CSS and JavaScript
 
