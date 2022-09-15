@@ -8,11 +8,11 @@
   html, body{
     scroll-behavior: smooth;
   }
-
-  .some_flex{
-    display: flex;
+  
+  .menu_item{
+    display: block;
   }
-
+  
   /* Position and sizing of burger button */
 
   .bm-burger-button {
