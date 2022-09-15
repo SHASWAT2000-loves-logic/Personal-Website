@@ -8,7 +8,7 @@
 6. Awards - previous awards
 7. Contact - to get in touch with me
 
-**Note** - There is an additional component, which only comes into play when the screen size is less than 480px or when the user is on mobile device.
+**Note** - There is an additional component (MobileNavbar), which only comes into play when the screen size is less than 480px or when the user is on mobile device.
 
 **Technologies Used** - HTML, CSS and JavaScript
 
@@ -48,11 +48,13 @@ d. Desktop, large screens - >1024px (index.css or the global stylesheet)
 
 **Sixth major commit (09/09/2022)** -  Added the favicon, corrected indentation
 
-**Seventh major commit (09/10/2022)** - Updated the content in the experience section, 
+**Seventh major commit (09/10/2022)** - Updated the content in the experience section, styled the card that holds the content 
 
 **Eighth major commit (09/13/2022)** - Added media queries for responsive website design. Media queries for screen sizes in range 481px - 767px and 768px - 1024px 
 
 **Ninth major commit (09/14/2022)** - Added media query for mobile devices. Created a hamburger menu of links for mobile devices
+
+**Final commit (09/14/2022)** - Added my name to the navbar alongside the hamburger menu
 
 **Bugs/Issues** -  
 
