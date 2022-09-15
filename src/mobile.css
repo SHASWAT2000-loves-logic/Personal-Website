@@ -127,10 +127,15 @@
   img{
    display: none;
   }
-  
-  /* Styling navbar elements */
 
-  .navbar li{
+  /* hiding the links in navbar */
+
+  .about_link, 
+  .education_link, 
+  .experience_link,
+  .news_link,
+  .awards_link, 
+  .contact_link{
     display: none;
   }
 
