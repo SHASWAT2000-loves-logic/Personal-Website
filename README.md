@@ -66,7 +66,7 @@ d. Desktop, large screens - >1024px (index.css or the global stylesheet)
 
 **Third possible fix** - Soon, I found out that CSS has a built-in property for smooth scrolling. By writing, html, body {scroll-behavior:smooth}, I was able to do smooth scrolling, which meant that I didn't need to use react-scroll for smooth scrolling in the first place. 
 
-**Final fix** - I didn't knew that react-scroll has an activeClass prop, which itself identifies the active link, and makes it easier to style the active link. It is very similar to how the activeClassName was in previous version of react-router. However, there is a caveat - it only highlights the active link when it sees it on the top of the website. This means that highlighting active link sometime **fails unpredictably**. A better solution to this problem would have been to use Boostrap, because it has built-in scrollspy library, which takes care of scrolling and highlighting active link.
+**Final fix** - I didn't knew that react-scroll has an activeClass prop, which itself identifies the active link, and makes it easier to style the active link. It is very similar to how the activeClassName was in previous version of react-router. However, there is a caveat - it only highlights the active link when it sees it on the top of the website. This means that highlighting active link sometimes **fails unpredictably**. A better solution to this problem would have been to use Boostrap, because it has built-in scrollspy library, which takes care of scrolling and highlighting active link.
 
 **2. Return to top of page after refresh (resolved)**. Display the page from the top whenever the website is refreshed - Web browsers record the last scrollY position of the user before a refresh and start from that position once the page is loaded. However, I wanted the user to start from the very top, whenever the user refreshes. 
 
@@ -76,7 +76,7 @@ d. Desktop, large screens - >1024px (index.css or the global stylesheet)
 
 **Final possible fix** - useEffect doesn't work on smaller screens, so I had to revert back to use window.onbeforeunload.
 
-**3. Problems after hosting on AWS, but not on local host - **
+**3. Problems after hosting on AWS, but not on local host -**
 
 **a. Links of media query showing up on full screen size (resolved)** - After hosting my website on AWS, I saw that whenever my website was launched, the links of MobileNavbar component were showing. To remove this, I had to use display:none on the links, and then display them when the screen width was reduced and MobileNavbar component comes into play. 
 
