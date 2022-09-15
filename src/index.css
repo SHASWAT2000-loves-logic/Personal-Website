@@ -43,6 +43,11 @@ html,body{
   display: none;
 }
 
+/* hiding the links in the burger menu */
+
+.menu_item{
+  display: none;
+}
 /* Sidebar is positioned fixed at the left side */
 
 .sidebar {

@@ -12,6 +12,7 @@
   .some_flex{
     display: flex;
   }
+
   /* Position and sizing of burger button */
 
   .bm-burger-button {
@@ -22,6 +23,9 @@
     left: 36px;
     top: 26px;
   }
+
+  /* To show my name at the right side of the burger menu */
+
   .bm-burger-button::after{
     content: "SHASWAT";
     position: relative;
