@@ -10,9 +10,9 @@
   }
   
   .menu_item{
-    display: block;
+    display: block !important;
   }
-  
+
   /* Position and sizing of burger button */
 
   .bm-burger-button {
