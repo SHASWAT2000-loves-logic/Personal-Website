@@ -25,22 +25,52 @@ function MobileNavbar() {
       onClose={handleIsOpen}
       noOverlay
     >
-      <a href="#about" className="menu_item" onClick={closeSidebar}>
+      <a
+        href="#about"
+        className="menu_item"
+        onClick={closeSidebar}
+        style={{ display: "none" }}
+      >
         About
       </a>
-      <a href="#education" className="menu_item" onClick={closeSidebar}>
+      <a
+        href="#education"
+        className="menu_item"
+        onClick={closeSidebar}
+        style={{ display: "none" }}
+      >
         Education
       </a>
-      <a href="#experience" className="menu_item" onClick={closeSidebar}>
+      <a
+        href="#experience"
+        className="menu_item"
+        onClick={closeSidebar}
+        style={{ display: "none" }}
+      >
         Experience
       </a>
-      <a href="#news" className="menu_item" onClick={closeSidebar}>
+      <a
+        href="#news"
+        className="menu_item"
+        onClick={closeSidebar}
+        style={{ display: "none" }}
+      >
         News
       </a>
-      <a href="#awards" className="menu_item" onClick={closeSidebar}>
+      <a
+        href="#awards"
+        className="menu_item"
+        onClick={closeSidebar}
+        style={{ display: "none" }}
+      >
         Awards
       </a>
-      <a href="#contact" className="menu_item" onClick={closeSidebar}>
+      <a
+        href="#contact"
+        className="menu_item"
+        onClick={closeSidebar}
+        style={{ display: "none" }}
+      >
         Contact
       </a>
     </Menu>

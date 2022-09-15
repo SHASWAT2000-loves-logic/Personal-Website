@@ -24,6 +24,10 @@ import Contact from "./components/Contact";
 import MobileNavbar from "./components/MobileNavbar";
 
 function App() {
+  // when the page is refreshed the user will be directly taken to the top of the page
+  window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div id="personal_website">
       <Sidebar />
