@@ -58,7 +58,7 @@ d. Desktop, large screens - >1024px (index.css or the global stylesheet)
 
 **Bugs/Issues** -  
 
-**1**. A major problem I faced was how to highlight the active link on the website or how to determine the component where the user is currently in. This was used to style the active link to let the user know on which section of the website they are in. 
+**1. Highlight active link**. A major problem I faced was how to highlight the active link on the website or how to determine the component where the user is currently in. This was used to style the active link to let the user know on which section of the website they are in. 
 
 **First possible fix** - I used useState hook and caught the scroll event and checked the position of user by window.scrollY. This allowed me to see in which section the user is in. However, this meant that I would have 6 states for 6 links/sections of webpage, and this led to **scalabality issues**. Also, when the width of screen was shortened, the window.acrollY wasn't calculating properly because the length of the content had increased, while the window.scrollY values had been hardcoded to check.
 
@@ -66,12 +66,20 @@ d. Desktop, large screens - >1024px (index.css or the global stylesheet)
 
 **Third possible fix** - Soon, I found out that CSS has a built-in property for smooth scrolling. By writing, html, body {scroll-behavior:smooth}, I was able to do smooth scrolling, which meant that I didn't need to use react-scroll for smooth scrolling in the first place. 
 
-**Final fix** - I didn't knew that react-scroll has an activeClass prop, which itself identifies the active link, and makes it easier to style the active link. It is very similar to how the activeClassName was in previous version of react-router. However, there is a caveat - it only highlights the active link when it sees it on the top of the website. This means that highlighting active link sometime fails unpredictably. A better solution to this problem would have been to use Boostrap, because it has built-in scrollspy library, which takes care of scrolling and highlighting active link.
+**Final fix** - I didn't knew that react-scroll has an activeClass prop, which itself identifies the active link, and makes it easier to style the active link. It is very similar to how the activeClassName was in previous version of react-router. However, there is a caveat - it only highlights the active link when it sees it on the top of the website. This means that highlighting active link sometimes **fails unpredictably**. A better solution to this problem would have been to use Boostrap, because it has built-in scrollspy library, which takes care of scrolling and highlighting active link.
 
-**2**. Display the page from the top whenever the webiste is refreshed - Web browsers record the last scrollY position of the user before a refresh and start from the position once the page is loadeed. However, I wanted the user to start from the very top, whenever the user refreshes. 
+**2. Return to top of page after refresh (resolved)**. Display the page from the top whenever the website is refreshed - Web browsers record the last scrollY position of the user before a refresh and start from that position once the page is loaded. However, I wanted the user to start from the very top, whenever the user refreshes. 
 
 **First possible fix** - use onbeforeunload to change the last recorded position before refresh to the top of the page. 
 
 **Second possible fix** - The combination of useEffect hook and window.scrollTo() function takes the user to the top of the page after the page is refreshed. 
 
 **Final possible fix** - useEffect doesn't work on smaller screens, so I had to revert back to use window.onbeforeunload.
+
+**3. Problems after hosting on AWS, but not on local host -**
+
+**a. Links of media query showing up on full screen size (resolved)** - After hosting my website on AWS, I saw that whenever my website was launched, the links of MobileNavbar component were showing. To remove this, I had to use display:none on the links, and then display them when the screen width was reduced and MobileNavbar component comes into play. 
+
+**b. The link to the pdf of my resume was not working (resolved)** - To fix this, I added pdf in regex in the source address column of the Rewrite and Redirects section. 
+
+**c. The contact form is not working** - I was using EmailJS as an external SMTP client, but AWS Amplify doesn't seem to recognize it. Instead, I got to know that AWS Amplify has its own Amazon SES SMTP for sending mails. 
