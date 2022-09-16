@@ -34,26 +34,54 @@ function Contact() {
 
   };
   const onSubmit = async (data) => {
-    const { name, email, subject, message } = data;
-    try {
-      const templateParams = {
-        name,
-        email,
-        subject,
-        message
-      };
-      await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_USER_ID
-      );
-      reset();
-      toastifySuccess();
-    } catch (e) {
-      console.log(e);
-    }
-  };
+
+    const { name, email, message } = data.target;
+
+    const endpoint = "<https://od5wv9kklh.execute-api.us-west-1.amazonaws.com/default/sendContactEmail>";
+  
+	  const body = JSON.stringify({
+      senderName: name.value,
+      senderEmail: email.value,
+      message: message.value
+    });
+    const requestOptions = {
+      method: "POST",
+      body
+    };
+
+    fetch(endpoint, requestOptions)
+      .then((response) => {
+        if (!response.ok) throw new Error("Error in fetch");
+          return response.json();
+        })
+      .then((response) => {
+        document.getElementById("result-text").innerText ="Email sent successfully!";
+        reset();
+        toastifySuccess();
+      })
+      .catch((error) => {
+        document.getElementById("result-text").innerText ="An unkown error occured.";
+      });
+  };    
+    // const { name, email, subject, message } = data;
+    // try {
+    //   const templateParams = {
+    //     name,
+    //     email,
+    //     subject,
+    //     message
+    //   };
+    //   await emailjs.send(
+    //     process.env.REACT_APP_SERVICE_ID,
+    //     process.env.REACT_APP_TEMPLATE_ID,
+    //     templateParams,
+    //     process.env.REACT_APP_USER_ID
+    //   );
+    //   reset();
+    //   toastifySuccess();
+    // } catch (e) {
+    //   console.log(e);
+    // }
   return (
     <div className='contact_section' id='contact'>
       <h1>Contact Me</h1>
@@ -91,22 +119,6 @@ function Contact() {
                 })}
               />
               {errors.email && (<div className='error_message'>Please enter a valid email address</div>)}
-            </div>
-
-            {/* Subject of the message  */}
-
-            <div className='input_group'>
-              <label htmlFor="subject">Subject</label>
-              <input type="text" name="subject" placeholder="Subject"
-                {...register('subject', {
-                required: { value: true, message: 'Please enter a subject' },
-                maxLength: {
-                value: 75,
-                message: 'Subject cannot exceed 75 characters'
-                }
-                })}
-              />
-              {errors.subject && (<div className='error_message'>{errors.subject.message}</div>)}
             </div>
             
             {/* Message */}
