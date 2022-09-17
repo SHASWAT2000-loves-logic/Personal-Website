@@ -16,6 +16,10 @@ function Education() {
           <li>Major GPA - 3.98/4.00</li>
         </ul>
       </div>
+      <div className="course_content">
+        <h3>Relevant Coursework - </h3>
+        <p>Software Engineering | Data Structure and Algorithms | Scientific Computing | Computer Networks | Cybersecurity | Computer Architecture | Numerical Computing | Linear Algebra</p>
+      </div>
     </div>
   )
 }
