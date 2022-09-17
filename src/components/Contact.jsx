@@ -1,65 +1,97 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import axios from 'axios';
 
-const App  = () => {
-    const [values, setValues] = useState({name: '', message: '', email: ''})
-    const [sent, setSent] = useState(false);
-    const handleChange = e => {
-        const {name, value} = e.target
-        setValues({...values, [name]: value})
-    }    
-
-    async function handleSubmit(event) {
-        event.preventDefault();
-        const response=await axios.post(
-          " https://rmq3epzrs4.execute-api.us-west-1.amazonaws.com/contactFormStage",
-            { message: `${values.name}`, name: `${values.message}`, email: `${values.email}` }
-        );
-        console.log(response);
-        setSent(true);
-    }
-
-    if (!sent) {
-        return (
-            <div style={{paddingLeft: '1vw',}}>
-              <form onSubmit={handleSubmit}>
-                <div style={{paddingTop: '2vh', paddingBottom: '2vh',}}>            
-                  <label>Name:</label><br/>
-                  <input
-                    name="name"
-                    onChange={handleChange}
-                    value={values.name}
-                  />
-                </div>
-                <div style={{paddingBottom: '2vh',}}>
-                  <label>Email:</label><br/>
-                  <input
-                    name="email"
-                    onChange={handleChange}
-                    value={values.email}
-                  />
-                </div>
-                <div style={{paddingBottom: '2vh',}}>
-                  <label>Message:</label><br/>
-                  <input
-                    name="message"
-                    onChange={handleChange}
-                    value={values.message}
-                  />
-                </div>
-
-                <button type="submit">Send</button>
-              </form>
-            </div>
-        );
+export default () => {
+  const [status, setStatus] = useState({
+    submitted: false,
+    submitting: false,
+    info: { error: false, msg: null },
+  });
+  const [inputs, setInputs] = useState({
+    email: '',
+    message: '',
+  });
+  const handleServerResponse = (ok, msg) => {
+    if (ok) {
+      setStatus({
+        submitted: true,
+        submitting: false,
+        info: { error: false, msg: msg },
+      });
+      setInputs({
+        email: '',
+        message: '',
+      });
     } else {
-        return (
-            <div style={{paddingLeft: '1vw',paddingTop: '1vh'}}>
-              <p>Thanks for contacting us! </p>
-              <p>We'll respond to your message shortly.</p>
-            </div>            
-        )
+      setStatus({
+        info: { error: true, msg: msg },
+      });
     }
-}        
-
-export default App;
+  };
+  const handleOnChange = (e) => {
+    e.persist();
+    setInputs((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value,
+    }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null },
+    });
+  };
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
+    axios({
+      method: 'POST',
+      url: 'https://formspree.io/f/mknejqva',
+      data: inputs,
+    })
+      .then((response) => {
+        handleServerResponse(
+          true,
+          'Thank you, your message has been submitted.',
+        );
+      })
+      .catch((error) => {
+        handleServerResponse(false, error.response.data.error);
+      });
+  };
+  return (
+    <main>
+      <h1>React and Formspree</h1>
+      <hr />
+      <form onSubmit={handleOnSubmit}>
+        <label htmlFor="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="_replyto"
+          onChange={handleOnChange}
+          required
+          value={inputs.email}
+        />
+        <label htmlFor="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          onChange={handleOnChange}
+          required
+          value={inputs.message}
+        />
+        <button type="submit" disabled={status.submitting}>
+          {!status.submitting
+            ? !status.submitted
+              ? 'Submit'
+              : 'Submitted'
+            : 'Submitting...'}
+        </button>
+      </form>
+      {status.info.error && (
+        <div className="error">Error: {status.info.msg}</div>
+      )}
+      {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
+    </main>
+  );
+};
