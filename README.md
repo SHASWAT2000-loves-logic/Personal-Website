@@ -21,6 +21,11 @@
 4. react-toastify - to provide notification after the form is successfully submitted. Mostly for good UX. After the user has submitted the form, a nice little notification will pop up on the bottom left corner of the screen and will be there for 5 seconds. 
 5. react-hamburger-menu - for creating a hamburger menu on mobile devices
 
+**3rd party service** - 
+
+**1.**- Formspree- Used this to receive emails when the users sent me a message through my website
+**2.** - Used Axios for making HTTP requests for the contact form.
+
 **External Services** - Emailjs - to receive email after the contact form is submitted, I used this external service. AFter the user has submitted the contact form, I will get an email with the all the information that the user has filled out in the input fields. 
 
 **Media Queries** - For responsive web design there are separate CSS files for devices of different screen sizes
@@ -82,4 +87,4 @@ d. Desktop, large screens - >1024px (index.css or the global stylesheet)
 
 **b. The link to the pdf of my resume was not working (resolved)** - To fix this, I added pdf in regex in the source address column of the Rewrite and Redirects section. 
 
-**c. The contact form is not working** - I was using EmailJS as an external SMTP client, but AWS Amplify doesn't seem to recognize it. Instead, I got to know that AWS Amplify has its own Amazon SES SMTP for sending mails. 
+**c. The contact form is not working** - I was using EmailJS as an external SMTP client, but AWS Amplify doesn't seem to recognize it. Instead, I got to know that AWS Amplify has its own Amazon SES (Simple Email Services) SMTP for sending mails. I tried using AWS SES, Lambda function, API Gateway, but to no avail, so I finally decided to deploy by website on Vercel. 
