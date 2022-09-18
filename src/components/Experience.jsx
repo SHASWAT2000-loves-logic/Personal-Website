@@ -20,11 +20,11 @@ function Experience() {
         </div>
         <ul className="position_description">
           <li>One of 9 students selected to participate in the NASA ULI Program</li>
-          <li>Project – “Vision Based Navigation in TurtleBots” (Supervisors- Dr. Marco Pavone and Dr. Shreyas Kousik)</li>
-          <li><span className="bold">Recorded</span> 10000 images from three TurtleBot cameras using <span className="bold">Rosbag</span> at 5 frames/sec</li>
+          <li>Project – “<span className="bold">Vision</span> Based Navigation in TurtleBots” (Supervisors- Dr. Marco Pavone and Dr. Shreyas Kousik)</li>
+          <li><span className="bold">Recorded</span> 10000 images from three TurtleBot cameras using <span className="bold">Rosbag</span> at <span className="bold">5 frames/sec</span></li>
           <li><span className="bold">Collaborated</span> in a team of <span className="bold">3</span> to <span className="bold">train</span> and <span className="bold">deploy</span> a Convolutional Neural Network <span className="bold">(CNN) model</span> to allow the TurtleBot to autonomously navigate through a path of static obstacles</li>
           <li>The CNN model was <span className="bold">tested</span> to an <span className="bold">accuracy</span> of <span className="bold">80%</span> after using it on validation data</li>
-          <li>Technologies used: Python, TensorFlow, Keras, ROS, Linux </li>
+          <li>Technologies used: <span className="bold">Python</span>, <span className="bold">TensorFlow</span>, <span className="bold">Keras</span>, <span className="bold">ROS</span>, <span className="bold">Linux</span></li>
         </ul>
       </div>
 
