@@ -30,7 +30,7 @@
     content: "SHASWAT";
     position: relative;
     top:-12px;
-    left:210px;
+    left:180px;
     color:#fff;
     font-size: 26px;
   }
@@ -51,7 +51,7 @@
   .bm-cross-button {
     height: 24px;
     width: 24px;
-    margin-right: -200px !important;
+    margin-right: -160px !important;
     margin-top: 0px !important;
   }
   
