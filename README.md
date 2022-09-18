@@ -1,5 +1,5 @@
 
-Go to [link text itself]: www.shaswatshukla.com to see the personal website
+Go to www.shaswatshukla.com to see the personal website
 
 **Description** - This repo contains the code for my personal website. The website has the following components for a user using any device other than smartphone- 
 
