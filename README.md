@@ -17,6 +17,8 @@ Go to www.shaswatshukla.com to see the personal website
 
 **Frameworks/Libraries** - React
 
+**HTTP client** - Axios 
+
 **React packages used** - 
 1. react icons - to use font awesome icons in React
 2. react-scroll - to provide the functionality of smooth scrolling within the website when links are clicked. This package is still growing and there might be some bugs that can go unnoticed. 
@@ -26,20 +28,21 @@ Go to www.shaswatshukla.com to see the personal website
 
 **3rd party service** - 
 
-**1.** - Formspree- Used this to receive emails when the users sent me a message through my website
-**2.** - Used Axios for making HTTP requests for the contact form.
+**1.** Formspree- Used this to receive emails when the users sent me a message through my website
+
+**2.** Used Axios for making HTTP requests for the contact form.
 
 **External Services** - Emailjs - to receive email after the contact form is submitted, I used this external service. AFter the user has submitted the contact form, I will get an email with the all the information that the user has filled out in the input fields. 
 
 **Media Queries** - For responsive web design there are separate CSS files for devices of different screen sizes
 
-a. Mobile devices - 320px - 480px (mobile.css)
+**a.** Mobile devices - 320px - 480px (mobile.css)
 
-b. iPads, Tablets - 481px - 768px (tablets.css)
+**b.** iPads, Tablets - 481px - 768px (tablets.css)
 
-c. Small screens, laptops - 769px - 1024px (laptops.css)
+**c.** Small screens, laptops - 769px - 1024px (laptops.css)
 
-d. Desktop, large screens - >1024px (index.css or the global stylesheet)
+**d.** Desktop, large screens - >1024px (index.css or the global stylesheet)
 
 
 **Commit history** - 
