@@ -13,16 +13,15 @@ function Experience() {
 
       <div className="card">
         <div className="card_grid">
-          <div className="position">Research Intern (Computer Vision)</div>
+          <div className="position">Research Intern</div>
           <div className="location"><SiGooglemaps className="card_icon"/>Palo Alto, CA</div>
           <div className="company"><FaUniversity className="card_icon"/> Stanford University</div>
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Aug. 2022 - Aug. 2022</div>
         </div>
         <ul className="position_description">
-          <li>One of 9 students selected to participate in the NASA ULI Program</li>
           <li>Project – “<span className="bold">Vision</span> Based Navigation in TurtleBots” (Supervisors- Dr. Marco Pavone and Dr. Shreyas Kousik)</li>
           <li><span className="bold">Recorded</span> 10000 images from three TurtleBot cameras using <span className="bold">Rosbag</span> at <span className="bold">5 frames/sec</span></li>
-          <li><span className="bold">Collaborated</span> in a team of <span className="bold">3</span> to <span className="bold">train</span> and <span className="bold">deploy</span> a Convolutional Neural Network <span className="bold">(CNN) model</span> to allow the TurtleBot to autonomously navigate through a path of static obstacles</li>
+          <li><span className="bold">Collaborated</span> in a team of <span className="bold">3</span> to <span className="bold">create</span> and <span className="bold">deploy</span> a Convolutional Neural Network <span className="bold">(CNN) model</span> to allow the TurtleBot to autonomously navigate through a path of static obstacles</li>
           <li>The CNN model was <span className="bold">tested</span> to an <span className="bold">accuracy</span> of <span className="bold">80%</span> after using it on validation data</li>
           <li>Technologies used: <span className="bold">Python</span>, <span className="bold">TensorFlow</span>, <span className="bold">Keras</span>, <span className="bold">ROS</span>, <span className="bold">Linux</span></li>
         </ul>
@@ -38,7 +37,6 @@ function Experience() {
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>May 2022 - July 2022</div>
         </div>
         <ul className="position_description">
-          <li>One of 8 students selected to participate in the SIRI program</li>
           <li>Project – “Form + Function 4-D Printing” (Supervisor - Dr. Richard Voyles)</li>
           <li>Created CAD model of an <span className="bold">IoT</span> based, "<span className="bold">smart</span>" bicycle crank using <span className="bold">Autodesk Fusion 360</span></li>
           <li>Externally <span className="bold">embedded</span> electrical components in bicycle crank for functionality using pick and place method</li>
@@ -74,7 +72,6 @@ function Experience() {
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>May 2021 - July 2021</div>
         </div>
         <ul className="position_description">
-          <li>One of 11 students selected to participate in the SIRI program</li>
           <li>Project- “<span className="bold">Algorithms</span> for Resilient Coordination and Situational Awareness in Swarm <span className="bold">Robotics</span>” (Supervisor- Dr. Shreyas Sundaram)</li>
           <li>Wrote <span className="bold">Python</span> scripts for simulating various task allocation algorithms used for assigning tasks to robots</li>
           <li>Used <span className="bold">NetworkX</span>, <span className="bold">NumPy</span>, <span className="bold">SciPy</span> and <span className="bold">MatplotLib</span> packages in Python to create and visualize coordination in networks of robots in a simulated environment </li>
