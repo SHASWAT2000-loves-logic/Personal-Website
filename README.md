@@ -32,7 +32,6 @@ Go to www.shaswatshukla.com to see the personal website
 
 **2.** Used Axios for making HTTP requests for the contact form.
 
-**External Services** - Emailjs - to receive email after the contact form is submitted, I used this external service. AFter the user has submitted the contact form, I will get an email with the all the information that the user has filled out in the input fields. 
 
 **Media Queries** - For responsive web design there are separate CSS files for devices of different screen sizes
 
@@ -85,7 +84,7 @@ Go to www.shaswatshukla.com to see the personal website
 
 **Second possible fix** - The combination of useEffect hook and window.scrollTo() function takes the user to the top of the page after the page is refreshed. 
 
-**Final possible fix** - useEffect doesn't work on smaller screens, so I had to revert back to use window.onbeforeunload.
+**Final possible fix** - useEffect doesn't work on smaller screens, so I had to revert back to use window.onbeforeunload().
 
 **3. Problems after hosting on AWS, but not on local host (production problems)** - 
 
