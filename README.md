@@ -21,27 +21,31 @@ Go to www.shaswatshukla.com to see the personal website
 
 **React packages used** - 
 1. react icons - to use font awesome icons in React
+
 2. react-scroll - to provide the functionality of smooth scrolling within the website when links are clicked. This package is still growing and there might be some bugs that can go unnoticed. 
+
 3. react-hook-form - to validate user input in the contact form
+
 4. react-toastify - to provide notification after the form is successfully submitted. Mostly for good UX. After the user has submitted the form, a nice little notification will pop up on the bottom left corner of the screen and will be there for 5 seconds. 
+
 5. react-hamburger-menu - for creating a hamburger menu on mobile devices
 
 **3rd party service** - 
 
-**1.** Formspree- Used this to receive emails when the users sent me a message through my website
+1. **Formspree** - Used this to receive emails when the users sent me a message through my website
 
-**2.** Used Axios for making HTTP requests for the contact form.
+2. **Axios** - for making HTTP requests for the contact form.
 
 
 **Media Queries** - For responsive web design there are separate CSS files for devices of different screen sizes
 
-**a.** Mobile devices - 320px - 480px (mobile.css)
+a.**Mobile devices** - 320px - 480px (mobile.css)
 
-**b.** iPads, Tablets - 481px - 768px (tablets.css)
+b. **iPads, Tablets** - 481px - 768px (tablets.css)
 
-**c.** Small screens, laptops - 769px - 1024px (laptops.css)
+c. **Small screens, laptops** - 769px - 1024px (laptops.css)
 
-**d.** Desktop, large screens - >1024px (index.css or the global stylesheet)
+d. **Desktop, large screens** - >1024px (index.css or the global stylesheet)
 
 
 **Commit history** - 
@@ -68,7 +72,7 @@ Go to www.shaswatshukla.com to see the personal website
 
 **Bugs/Issues** -  
 
-**1. Highlight active link** - A major problem I faced was how to highlight the active link on the website or how to determine the component where the user is currently in. This was used to style the active link to let the user know on which section of the website they are in. 
+1. **Highlight active link** - A major problem I faced was how to highlight the active link on the website or how to determine the component where the user is currently in. This was used to style the active link to let the user know on which section of the website they are in. 
 
 **First possible fix** - I used useState hook and caught the scroll event and checked the position of user by window.scrollY. This allowed me to see in which section the user is in. However, this meant that I would have 6 states for 6 links/sections of webpage, and this led to **scalabality issues**. Also, when the width of screen was shortened, the window.acrollY wasn't calculating properly because the length of the content had increased, while the window.scrollY values had been hardcoded to check.
 
@@ -78,7 +82,7 @@ Go to www.shaswatshukla.com to see the personal website
 
 **Final fix** - I didn't knew that react-scroll has an activeClass prop, which itself identifies the active link, and makes it easier to style the active link. It is very similar to how the activeClassName was in previous version of react-router. However, there is a caveat - it only highlights the active link when it sees it on the top of the website. This means that highlighting active link sometimes **fails unpredictably**. A better solution to this problem would have been to use Boostrap, because it has built-in scrollspy library, which takes care of scrolling and highlighting active link.
 
-**2. Return to top of page after refresh (resolved)**. Display the page from the top whenever the website is refreshed - Web browsers record the last scrollY position of the user before a refresh and start from that position once the page is loaded. However, I wanted the user to start from the very top, whenever the user refreshes. 
+2. **Return to top of page after refresh (resolved)**. Display the page from the top whenever the website is refreshed - Web browsers record the last scrollY position of the user before a refresh and start from that position once the page is loaded. However, I wanted the user to start from the very top, whenever the user refreshes. 
 
 **First possible fix** - use onbeforeunload to change the last recorded position before refresh to the top of the page. 
 
@@ -86,10 +90,10 @@ Go to www.shaswatshukla.com to see the personal website
 
 **Final possible fix** - useEffect doesn't work on smaller screens, so I had to revert back to use window.onbeforeunload().
 
-**3. Problems after hosting on AWS, but not on local host (production problems)** - 
+3. **Problems after hosting on AWS, but not on local host (production problems)** - 
 
-**a. Links of media query showing up on full screen size (resolved)** - After hosting my website on AWS, I saw that whenever my website was launched, the links of MobileNavbar component were showing. To remove this, I had to use display:none on the links, and then display them when the screen width was reduced and MobileNavbar component comes into play. 
+a. **Links of media query showing up on full screen size (resolved)** - After hosting my website on AWS, I saw that whenever my website was launched, the links of MobileNavbar component were showing. To remove this, I had to use display:none on the links, and then display them when the screen width was reduced and MobileNavbar component comes into play. 
 
-**b. The link to the pdf of my resume was not working (resolved)** - To fix this, I added pdf in regex in the source address column of the Rewrite and Redirects section. 
+b. **The link to the pdf of my resume was not working (resolved)** - To fix this, I added pdf in regex in the source address column of the Rewrite and Redirects section in AWS.
 
-**c. The contact form is not working (resolved)** - I was using EmailJS as an external SMTP client, but AWS Amplify doesn't seem to recognize it. Instead, I got to know that AWS Amplify has its own Amazon SES (Simple Email Services) SMTP for sending mails. I tried using AWS SES, Lambda function, API Gateway, but to no avail, so I finally decided to deploy my website on Vercel. To deploy my website on Vercel using the domain bought on AWS, I had to make some root changes to my AWS domain. 
+c. **The contact form is not working (resolved)** - I was using EmailJS as an external SMTP client, but AWS Amplify doesn't seem to recognize it. Instead, I got to know that AWS Amplify has its own Amazon SES (Simple Email Services) SMTP for sending mails. I tried using AWS SES, Lambda function, API Gateway, but to no avail, so I finally decided to deploy my website on Vercel. To deploy my website on Vercel using the domain bought on AWS, I had to make some root changes to my AWS domain. 
