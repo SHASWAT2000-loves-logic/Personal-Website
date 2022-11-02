@@ -9,7 +9,25 @@ function Experience() {
     <div className="experience_section" id="experience">
       <h1>Experience</h1>
 
-    {/* First experience */}
+      {/* First experience */}
+
+      <div className="card">
+        <div className="card_grid">
+          <div className="position">Front End Developer Intern</div>
+          <div className="location"><SiGooglemaps className="card_icon"/>Albuquerque, CA</div>
+          <div className="company"><FaUniversity className="card_icon"/> Second Judicial District Attorney's Pffice</div>
+          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Sep. 2022 - Present</div>
+        </div>
+        <ul className="position_description">
+          <li><span className="bold">Developing</span> a <span className="bold">web application</span> to streamline and digitalize the procurement and requisition process of paper forms</li>
+          <li><span className="bold">Creating</span> a dashboard for users to access all the required documents in one workspace</li>
+          <li>Technologies used: <span className="bold">React</span>, <span className="bold">PostgreSQL</span>, <span className="bold">Bootswatch</span></li>
+        </ul>
+      </div>
+
+
+
+    {/* Second experience */}
 
       <div className="card">
         <div className="card_grid">
@@ -27,7 +45,7 @@ function Experience() {
         </ul>
       </div>
 
-      {/* Second experience */}
+      {/* Third experience */}
 
       <div className="card">
         <div className="card_grid">
@@ -45,7 +63,7 @@ function Experience() {
         </ul>
       </div>
     
-      {/* Third experience */}
+      {/* Fourth experience */}
 
       <div className="card">
         <div className="card_grid">
@@ -62,7 +80,7 @@ function Experience() {
         </ul>
       </div>
 
-        {/* Fourth experience */}
+        {/* Fifth experience */}
 
       <div className="card">
         <div className="card_grid">
@@ -79,7 +97,7 @@ function Experience() {
          </ul>
       </div>
 
-        {/* Fifth experience */}
+        {/* Last experience */}
 
       <div className="card">
         <div className="card_grid">
