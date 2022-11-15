@@ -13,7 +13,7 @@ function Education() {
         <p>Bachelor of Science (B.S) in Computer Science</p>
         <ul className="edu_list">
           <li>Minor in Mathematics</li>
-          <li>Major GPA - 3.98/4.00</li>
+          <li>Major GPA - 3.97/4.0</li>
         </ul>
       </div>
       <div className="course_content">
