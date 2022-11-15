@@ -101,13 +101,13 @@ function Experience() {
 
       <div className="card">
         <div className="card_grid">
-          <div className="position">Physics and Math Tutor</div>
+          <div className="position">STEM Tutor</div>
           <div className="location"><SiGooglemaps className="card_icon"/>Albuquerque, NM</div>
           <div className="company"><FaUniversity className="card_icon"/>University of New Mexico</div>
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Jan. 2021 - Present</div>
         </div>
         <ul className="position_description">
-          <li><span className="bold">Tutored</span> Calculus I, II, III and General Physics I and II</li>
+          <li><span className="bold">Tutored</span> Java, Python, Calculus I, II, III and General Physics I and II</li>
           <li><span className="bold">Assisted</span> students with homework</li>
           <li>Went over quiz problems with students</li>
           <li><span className="bold">Enhanced</span> tutoring skills through weekly trainings and feedback</li>
