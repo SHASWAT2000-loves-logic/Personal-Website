@@ -9,7 +9,6 @@ function Experience() {
     <div className="experience_section" id="experience">
       <h1>Experience</h1>
 
-      {/* First experience */}
 
       <div className="card">
         <div className="card_grid">
@@ -25,9 +24,20 @@ function Experience() {
         </ul>
       </div>
 
+      <div className="card">
+        <div className="card_grid">
+          <div className="position">Undergraduate Research Assistant</div>
+          <div className="location"><SiGooglemaps className="card_icon"/>Albuquerque, NM</div>
+          <div className="company"><FaUniversity className="card_icon"/>University of New Mexico</div>
+          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Sep. 2022 - Present</div>
+        </div>
+        <ul className="position_description">
+          <li>Working on a <span className="bold">novel</span> method to 3-D print clay products by <span className="bold">converting</span> ceramic 3-D printers into clay specific 3-D printers</li>
+          <li><span className="bold">Writing</span> new sets of G-code commands to <span className="bold">enable</span> clay 3-D printers to print clay</li>
+          <li><span className="bold">Developing</span> a web <span className="bold">application</span> to visualize executed G-code to <span className="bold">reduce</span> printing inaccuracies</li>
+        </ul>
+      </div>
 
-
-    {/* Second experience */}
 
       <div className="card">
         <div className="card_grid">
@@ -45,7 +55,6 @@ function Experience() {
         </ul>
       </div>
 
-      {/* Third experience */}
 
       <div className="card">
         <div className="card_grid">
@@ -63,7 +72,6 @@ function Experience() {
         </ul>
       </div>
     
-      {/* Fourth experience */}
 
       <div className="card">
         <div className="card_grid">
@@ -80,7 +88,6 @@ function Experience() {
         </ul>
       </div>
 
-        {/* Fifth experience */}
 
       <div className="card">
         <div className="card_grid">
@@ -97,7 +104,6 @@ function Experience() {
          </ul>
       </div>
 
-        {/* Last experience */}
 
       <div className="card">
         <div className="card_grid">
