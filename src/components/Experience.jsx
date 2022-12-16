@@ -14,7 +14,7 @@ function Experience() {
         <div className="card_grid">
           <div className="position">Front End Developer Intern</div>
           <div className="location"><SiGooglemaps className="card_icon"/>Albuquerque, NM</div>
-          <div className="company"><FaUniversity className="card_icon"/> Second Judicial District Attorney's Pffice</div>
+          <div className="company"><FaUniversity className="card_icon"/> Second Judicial District Attorney's Office</div>
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Sep. 2022 - Present</div>
         </div>
         <ul className="position_description">
