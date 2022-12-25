@@ -9,21 +9,6 @@ function Experience() {
     <div className="experience_section" id="experience">
       <h1>Experience</h1>
 
-
-      <div className="card">
-        <div className="card_grid">
-          <div className="position">Front End Developer Intern</div>
-          <div className="location"><SiGooglemaps className="card_icon"/>Albuquerque, NM</div>
-          <div className="company"><FaUniversity className="card_icon"/> Second Judicial District Attorney's Office</div>
-          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Sep. 2022 - Present</div>
-        </div>
-        <ul className="position_description">
-          <li><span className="bold">Developing</span> a <span className="bold">web application</span> to streamline and digitalize the procurement and requisition process of paper forms</li>
-          <li><span className="bold">Creating</span> a dashboard for users to access all the required documents in one workspace</li>
-          <li>Technologies used: <span className="bold">React</span>, <span className="bold">PostgreSQL</span>, <span className="bold">Bootswatch</span></li>
-        </ul>
-      </div>
-
       <div className="card">
         <div className="card_grid">
           <div className="position">Undergraduate Research Assistant</div>
@@ -35,6 +20,21 @@ function Experience() {
           <li>Working on a <span className="bold">novel</span> method to 3-D print clay products by <span className="bold">converting</span> ceramic 3-D printers into clay specific 3-D printers</li>
           <li><span className="bold">Writing</span> new sets of G-code commands to <span className="bold">enable</span> clay 3-D printers to print clay</li>
           <li><span className="bold">Developing</span> a web <span className="bold">application</span> to visualize executed G-code to <span className="bold">reduce</span> printing inaccuracies</li>
+        </ul>
+      </div>
+
+
+      <div className="card">
+        <div className="card_grid">
+          <div className="position">Front End Developer Intern</div>
+          <div className="location"><SiGooglemaps className="card_icon"/>Albuquerque, NM</div>
+          <div className="company"><FaUniversity className="card_icon"/> Second Judicial District Attorney's Office</div>
+          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Sep. 2022 - Dec. 2022</div>
+        </div>
+        <ul className="position_description">
+          <li><span className="bold">Developing</span> a <span className="bold">web application</span> to streamline and digitalize the procurement and requisition process of paper forms</li>
+          <li><span className="bold">Creating</span> a dashboard for users to access all the required documents in one workspace</li>
+          <li>Technologies used: <span className="bold">React</span>, <span className="bold">PostgreSQL</span>, <span className="bold">Bootswatch</span></li>
         </ul>
       </div>
 
@@ -110,7 +110,7 @@ function Experience() {
           <div className="position">STEM Tutor</div>
           <div className="location"><SiGooglemaps className="card_icon"/>Albuquerque, NM</div>
           <div className="company"><FaUniversity className="card_icon"/>University of New Mexico</div>
-          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Jan. 2021 - Present</div>
+          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Jan. 2021 - Dec. 2022</div>
         </div>
         <ul className="position_description">
           <li><span className="bold">Tutored</span> Java, Python, Calculus I, II, III and General Physics I and II</li>
