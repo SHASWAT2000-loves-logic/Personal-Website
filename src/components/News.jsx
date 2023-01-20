@@ -7,10 +7,10 @@ function News() {
 
       <div className="news_grid">
         <div className="news_date">
-          <h3><BiCalendar className="news_icon"/>Sept 2022</h3>
+          <h3><BiCalendar className="news_icon"/>Dec 2022</h3>
         </div>
         <div className="news_content">
-          <p><span className="highlighted">UPDATE </span> - Started as front-end intern as part of the EPICS program at UNM</p>
+          <p>Graduated from UNM with a bachelor's degree in computer science</p>
         </div>
       </div>
 
@@ -19,7 +19,16 @@ function News() {
           <h3><BiCalendar className="news_icon"/>Sept 2022</h3>
         </div>
         <div className="news_content">
-          <p><span className="highlighted">UPDATE </span> - Accepted the position of undergraduate research assistant at the Hand and Machine lab at the University of New Mexico</p>
+          <p>Started as front-end intern as part of the EPICS program at UNM</p>
+        </div>
+      </div>
+
+      <div className="news_grid">
+        <div className="news_date">
+          <h3><BiCalendar className="news_icon"/>Sept 2022</h3>
+        </div>
+        <div className="news_content">
+          <p>Accepted the position of undergraduate research assistant at the Hand and Machine lab at UNM</p>
         </div>
       </div>
 
@@ -38,33 +47,6 @@ function News() {
         </div>
         <div className="news_content">
           <p>Started the internship at Purdue University; part of SIRI, SROP program</p>
-        </div>
-      </div>
-
-      <div className="news_grid">
-        <div className="news_date">
-          <h3><BiCalendar className="news_icon"/>Aug 2021</h3>
-        </div>
-        <div className="news_content">
-          <p>Accepted the position of computer consultant at the University of New Mexico</p>
-        </div>
-      </div>
-
-      <div className="news_grid">
-        <div className="news_date">
-          <h3><BiCalendar className="news_icon"/>May 2021</h3>
-        </div>
-        <div className="news_content">
-          <p>Started the internship at Purdue University; part of SIRI, SROP program</p>
-        </div>
-      </div>
-
-      <div className="news_grid">
-        <div className="news_date">
-          <h3><BiCalendar className="news_icon"/>Jan 2021</h3>
-        </div>
-        <div className="news_content">
-          <p>Accepted the position of physics and math tutor at the University of New Mexico</p>
         </div>
       </div>
 
