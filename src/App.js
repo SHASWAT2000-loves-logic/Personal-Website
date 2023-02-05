@@ -11,7 +11,7 @@
 */
 
 /* Note- There is also MobileNavbar component that has the hamburger menu, but it only shows on mobile devices that have width less than 480px*/
-
+import { useEffect } from "react";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import Education from "./components/Education";
@@ -23,11 +23,12 @@ import Contact from "./components/Contact";
 // only for mobile devices
 import MobileNavbar from "./components/MobileNavbar";
 
+// when the page is refreshed the user will be directly taken to the top of the website
 function App() {
-  // when the page is refreshed the user will be directly taken to the top of the page
-  window.onbeforeunload = () => {
-    window.scrollTo(0, 0);
-  };
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+  }, []);
+
   return (
     <div id="personal_website">
       <Sidebar />

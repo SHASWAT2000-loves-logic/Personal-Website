@@ -35,6 +35,7 @@ html,body{
   background-color: #f1f1f1; 
   font-family: 'Roboto', sans-serif;
   line-height: 1.8;
+  scroll-behavior: smooth;
 }
 
 /* initially we don't display the burger menu. It will only be displayed on mobile devices */
@@ -105,7 +106,6 @@ img{
 .contact_link:hover{
   color:#f1f1f1;
 }
-
 
 /* All p tags have a general font size */
 
