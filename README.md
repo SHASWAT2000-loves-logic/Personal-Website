@@ -1,54 +1,40 @@
 
-Go to www.shaswatshukla.com to see the personal website
 
-**Description** - This repo contains the code for my personal website. The website has the following components for a user using any device other than smartphone- 
+# Project description
 
-1. Sidebar - positioned fixed to the left side
-2. About - general description about myself, my past experiences and looking ahead
-3. Education - my college name, GPA, expected graduation
-4. Experience - previous internships and jobs on campus
-5. News - latest updates about my work
-6. Awards - previous awards
-7. Contact - to get in touch with me
+This repo contains the code for my personal website. The website has the following sections- 
 
-**Note** - There is an additional component (MobileNavbar), which only comes into play when the screen size is less than 480px or when the user is on mobile device.
+1. Home - general description about myself including my past experiences and looking ahead
+2. Education - college name, GPA, graduation date
+3. Experience - previous internships and jobs on campus
+4. News - latest updates about what's happening in my life
+5. Awards - previous awards that I have received
+6. Contact - to get in touch with me
 
-**Technologies Used** - HTML, CSS and JavaScript
+## Project link - www.shaswatshukla.com
 
-**Frameworks/Libraries** - React
+### Motivation for the project 
 
-**HTTP client** - Axios 
+I wanted to build my own personal website from scratch. I chose React because it is ideal for building a single page application.  
 
-**React packages used** - 
-1. react icons - to use font awesome icons in React
+### Major takeaways from the project
 
-2. react-scroll - to provide the functionality of smooth scrolling within the website when links are clicked. This package is still growing and there might be some bugs that can go unnoticed. 
+1. Component based nature of React. Built various components in React and saw how they add up to make the website. 
+2. Responsive design in React.
+3. Learnt various AWS services like AWS Amplify, Lambda function, IAM, API Gateway, AWS SES.
+4. Learnt the importance of using exisitng npm packages to add features in a website. 
+5. How to debug production code problems or the problems that were not showing up on the local host, but were there when the website was depolyed on the web.   
+6. Learnt about branching and merging in Git. Created a new branch to solve the highlighting active link problem and after the issues were fixed, I merged it with the main branch.
 
-3. react-hook-form - to validate user input in the contact form
+### Technologies
 
-4. react-toastify - to provide notification after the form is successfully submitted. Mostly for good UX. After the user has submitted the form, a nice little notification will pop up on the bottom left corner of the screen and will be there for 5 seconds. 
+HTML, CSS and JavaScript
 
-5. react-hamburger-menu - for creating a hamburger menu on mobile devices
+### Frameworks/Libraries
 
-**3rd party service** - 
+React
 
-1. **Formspree** - Used this to receive emails when the users sent me a message through my website
-
-2. **Axios** - for making HTTP requests for the contact form.
-
-
-**Media Queries** - For responsive web design there are separate CSS files for devices of different screen sizes
-
-a.**Mobile devices** - 320px - 480px (mobile.css)
-
-b. **iPads, Tablets** - 481px - 768px (tablets.css)
-
-c. **Small screens, laptops** - 769px - 1024px (laptops.css)
-
-d. **Desktop, large screens** - >1024px (index.css or the global stylesheet)
-
-
-**Commit history** - 
+### Commit history 
 
 **First major commit (09/05/2022)** - Added the sidebar component
 
@@ -70,7 +56,43 @@ d. **Desktop, large screens** - >1024px (index.css or the global stylesheet)
 
 **Final commit (09/14/2022)** - Added my name to the navbar alongside the hamburger menu
 
-**Bugs/Issues** -  
+**Update (02/04/2023)** - Fixed the active link issue. Explanation can be found in the readme file of the fixed-active-link-issue branch. 
+
+### Media Queries 
+
+For responsive web design there are separate CSS files for devices of different screen sizes -
+
+a. Mobile devices - 320px - 480px (mobile.css)
+
+b. iPads, Tablets - 481px - 768px (tablets.css)
+
+c. Small screens, laptops - 769px - 1024px (laptops.css)
+
+d. Desktop, large screens - >1024px (index.css)
+
+### HTTP client 
+
+Axios for making the post request when the user submits the contact form. 
+
+### React packages used  
+
+1. react icons - to use font awesome icons in React
+
+2. react-scroll - to highlight the active link and provide the functionality of smooth scrolling within the website when links are clicked 
+
+3. react-hook-form - to validate user input in the contact form
+
+4. react-toastify - to provide notification after the form is successfully submitted. Mostly for good UX. After the user has submitted the form, a notification will pop up on the bottom right corner of the screen and will disappear after 5 seconds. 
+
+5. react-hamburger-menu - for creating a hamburger menu on mobile devices
+
+### 3rd party service 
+
+1. Formspree - Used this to receive emails when the users sent me a message through my website
+
+2. Axios - for making HTTP requests for the contact form.
+
+### Bugs/Issues  
 
 1. **Highlight active link (resolved)** - A major problem I faced was how to highlight the active link on the website or how to determine the component where the user is currently in. This was used to style the active link to let the user know on which section of the website they are in. 
 
@@ -82,7 +104,7 @@ d. **Desktop, large screens** - >1024px (index.css or the global stylesheet)
 
 **Fourth possible fix** - Used react-scroll npm package to highlight active link. It has a activeClass prop which makes sure that the styling is applied to an active link. But there is some issue when we use a combination of smooth scrolling and highligthing active link in react-scroll. https://github.com/fisshy/react-scroll/issues/29. Because of this the clicked link doesn't highlight on all ocassions and fails unpreditably. 
 
-**Final fix** - I was able to fix this issue by removing the scroll smooth effect prop from the Link component and instead, I used html, body {scroll-behavior:smooth}  in the style sheet. . 
+**Final fix** - I was able to fix this issue by removing the scroll smooth effect prop from the Link component and instead, I used html, body {scroll-behavior:smooth}  in the style sheet. This issue was resolved in the fixed-active-link-issue branch.  
 
 2. **Return to top of page after refresh (resolved)**. Display the page from the top whenever the website is refreshed - Web browsers record the last scroll position of the user before a refresh and start from that position once the page is loaded. However, I wanted the user to start from the very top, whenever the user refreshes. 
 
@@ -90,7 +112,7 @@ d. **Desktop, large screens** - >1024px (index.css or the global stylesheet)
 
 **Second possible fix** - onbeforeunload() was not working for some reason, but the combination of useEffect hook and window.scrollTo() function was able to take the user to the top of the page after the page is refreshed.  
 
-**Final possible fix** - window.scrollTo() wasn't working for smaller screens, so I used window.history.scrollRestoration = "manual", which makes sure that the browser doesn't store the scroll position before the page is refreshed and the "manual" value, allows the page to start from the top every time it is loaded.  
+**Final possible fix** - window.scrollTo() wasn't working for smaller screens, so I used window.history.scrollRestoration = "manual", which makes sure that the browser doesn't store the scroll position before the page is refreshed and the "manual" value, allows the page to start from the top every time it is loaded. This issue was resolved in the fixed-active-link-issue branch.
 
 3. **Problems after hosting on AWS, but not on local host (production code problems)** - 
 
