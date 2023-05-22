@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import {useForm} from "react-hook-form"
 import React from 'react'
 import axios from 'axios';
+import ScrollToTop from './ScrollToTop';
 
 function Contact(){  
 
@@ -23,7 +24,7 @@ function Contact(){
   // This function styles the notification that the user will see after the form is submitted
 
   const toastifySuccess = () => {
-    toast('Form was successfully sent to Shaswat Shukla', {
+    toast('Message was successfully sent to Shaswat Shukla', {
       position: 'bottom-right',
       autoClose: 5000,
       hideProgressBar: true,
@@ -117,6 +118,7 @@ function Contact(){
         </div>  
       </form>
         <ToastContainer/>
+        <ScrollToTop/>
     </div>
   );
 }        

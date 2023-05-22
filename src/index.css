@@ -38,17 +38,21 @@ html,body{
   scroll-behavior: smooth;
 }
 
-/* initially we don't display the burger menu. It will only be displayed on mobile devices */
+/* styling the scroll to top button */
 
-.bm-burger-button {
-  display: none;
+.scroll_top{
+  position: fixed;
+  right: 50px;
+  bottom: 60px;
+  cursor: pointer;
+  color: #BD5D38;
+  font-size: 32px;
 }
 
-/* hiding the links in the burger menu */
-
-.menu_item{
-  display: none;
+.scroll_top:hover{
+  opacity: 0.8;
 }
+
 /* Sidebar is positioned fixed at the left side */
 
 .sidebar {
@@ -127,12 +131,26 @@ h1{
   margin-bottom: 0px;
 }
 
+/* for styling the links in the experience section */
+
+.main_color{
+  color: #BD5D38;
+  text-decoration: none;
+  transition: 0.9s;
+}
+.main_color:hover{
+  text-decoration: underline;
+}
 
 /* Styling the container that contains the components */
 
 .main_content{
   margin-left: 300px;
   padding:80px 48px;
+}
+
+.mobile_navbar p{
+  display: none;
 }
 
 /* Generalized styling for every component*/
@@ -163,6 +181,9 @@ h1{
 .about_section{
   padding-bottom: 80px;
 }
+/* .about_section h1{
+  margin-top: -30px;
+} */
 
 .short_intro{
   font-size: 28px;

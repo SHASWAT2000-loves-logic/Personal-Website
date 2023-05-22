@@ -2,9 +2,22 @@
 
 @media only screen and (min-width:768px) and (max-width:1024px){
 
+  /* changing the style of the scroll to top button */
+
+  .scroll_top{
+    right: 6px;
+    bottom: 30px;
+  }
+
+  .scroll_top:hover{
+    opacity: 0.8;
+  }
+
   /* Sidebar component */
 
   /* reducing the width of sidebar */
+
+  
 
   .sidebar{
     width:200px;

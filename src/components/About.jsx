@@ -1,18 +1,21 @@
 // About component contains the content in the about section of the website
 
 import {FaLinkedin, FaGithub} from "react-icons/fa"
-import Resume from "../Resume/Shukla_Shaswat_Resume.pdf"
+import Resume from "../Resume/Shaswat Shukla Resume.pdf"
 function About() {
   return (
     <div className="about_section" id="about">
       <h1 className="bold_name">Shaswat Shukla</h1>
-      <p className="short_intro">Recent computer science graduate from University of New Mexico</p>
+      <p className="short_intro">Software Developer 1 @ New Mexico Environment Department</p>
       <a href="http://linkedin.com/in/shaswat-shukla/" target="_blank"><FaLinkedin className="about_icons"/></a>
       <a href="https://github.com/SHASWAT2000-loves-logic?tab=repositories" target="_blank"><FaGithub className="about_icons"/></a> 
-      <p>I am a recent CS graduate from the University of New Mexico looking for a full-time junior software engineer or entry level software developer position. Specifically, I am interested in front-end/back-end/full stack web development as I have prior experience in building web applications using HTML, CSS and JavaScript. I have used various CSS frameworks like Bootstrap, Materialize CSS, Tailwind CSS etc to build UIs. I am also familiar with using CSS preprocessors Sass/Less for styling HTML elements. My go to front-end framework is React (even this personal website is created using React) and I have some experience with Angular. For the back-end, I am experienced with NodeJS, Express and MySQL. For deploying web applications, I have previously used AWS, Netlify and Vercel. </p>
+      <p>I am a recent CS graduate from the University of New Mexico (UNM) working as a software developer at the New Mexico Environment Department. Previously, I built a website from scratch for the Great Plains Partners Venture Group startup and also completed a software engineering internship at New Mexico Administrative Office of the District Attorneys. Before that, I did research projects at UNM, Stanford and Purdue, working in different areas of computer science such as robotics, IoT and deep learning.</p>
       <br />
-      <p>Other than that, I have also built websites using Flask, a micro web framework of Python. Apart from web technologies, I have experience with Python and several of its libraries like NumPy, SciPy and MatplotLib. Recently, I also had the opportunity to gain some experience in machine learning as well, where I mostly used TensorFlow, Keras for training CNN models.</p>
+      <p><span className="bold">Interests</span> – Frontend development, full stack development, UI/UX</p>
+      <p><span className="bold">Proficient</span> – HTML, CSS (SASS/LESS), JavaScript (React, Angular, Node), Python (Flask), SQL</p>
+      <p><span className="bold">Tools</span> – AWS, Git, Netlify, Vercel, VS Code</p>
       <br />
+
       <a href={Resume} target="_blank" className="resume"><span className="highlighted">Resume</span></a>
     </div>
   )

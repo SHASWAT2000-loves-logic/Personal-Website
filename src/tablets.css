@@ -3,6 +3,7 @@
 @media only screen and (min-width:481px) and (max-width:767px) {
 
   /* General changes in headings and paragraphs */
+  
   h1{
     font-size: 40px;
     margin-top: 30px;
@@ -11,6 +12,17 @@
   }
   p{
     font-size: 16px;
+  }
+
+  /* changing the style of the scroll to top button */
+
+  .scroll_top{
+    right: 0px;
+    bottom: 60px;
+  }
+
+  .scroll_top:hover{
+    opacity: 0.8;
   }
 
   /* for this range of screen size, the sidebar will be positioned fixed at the top */

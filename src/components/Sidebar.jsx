@@ -11,7 +11,7 @@ function Sidebar() {
           {/* personal image */}
           <img src={require("../images/Personal_Photo.png")} alt="Something went wrong" />
           {/* link to about section */}
-          <li><Link activeClass="active_link" to="about" spy={true} offset={-80} duration={1000} className="about_link">About</Link></li>
+          <li><Link activeClass="active_link" to="about" spy={true} offset={-130} duration={1000} className="about_link">About</Link></li>
           {/* link to education section */}
           <li><Link activeClass="active_link" to="education" spy={true} offset={-80} duration={1000} className="education_link">Education</Link></li>
           {/* link to experience section */}
