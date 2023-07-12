@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
+      name="personal website"
       content="Web site created using create-react-app"
     />
     <title>Shaswat Shukla</title>
   </head>
+  <!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GPZ6GHT0N"></script> -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=%process.env.REACT_APP_MEASUREMENT_ID%"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', `${process.env.REACT_APP_MEASUREMENT_ID}`);
+</script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
