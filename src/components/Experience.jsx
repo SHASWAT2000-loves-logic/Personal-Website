@@ -29,7 +29,7 @@ function Experience() {
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Feb. 2023 – Mar. 2023</div>
         </div>
         <ul className="position_description">
-          <li>Worked as a contractor to <span className="bold">build</span> and <span className="bold">deploy</span> a <span className="bold">responsive</span> multi page website of the company</li>
+          <li>Worked as a contractor to <span className="bold">build</span> and <span className="bold">deploy</span> a <span className="bold">responsive</span> multi page website</li>
           <li>Website link: <a href="https://greatplainsventures.com/" target="_blank"><span className="main_color">Great Plains Partners Ventures Group</span> </a></li>
           <li>Technologies used: <span className="bold">React</span>, <span className="bold">Netlify</span></li>
         </ul>
