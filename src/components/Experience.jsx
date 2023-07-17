@@ -24,12 +24,12 @@ function Experience() {
       <div className="card">
         <div className="card_grid">
           <div className="position">Frontend Developer</div>
-          <div className="location"><SiGooglemaps className="card_icon"/>Manhattan, KS</div>
+          <div className="location"><SiGooglemaps className="card_icon"/>Remote</div>
           <div className="company"><FaUniversity className="card_icon"/> Great Plains Partners Ventures Group</div>
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Feb. 2023 – Mar. 2023</div>
         </div>
         <ul className="position_description">
-          <li><span className="bold">Built</span> and <span className="bold">deployed</span> a <span className="bold">responsive</span> multi page website of the company</li>
+          <li>Worked as a contractor to <span className="bold">build</span> and <span className="bold">deploy</span> a <span className="bold">responsive</span> multi page website of the company</li>
           <li>Website link: <a href="https://greatplainsventures.com/" target="_blank"><span className="main_color">Great Plains Partners Ventures Group</span> </a></li>
           <li>Technologies used: <span className="bold">React</span>, <span className="bold">Netlify</span></li>
         </ul>
