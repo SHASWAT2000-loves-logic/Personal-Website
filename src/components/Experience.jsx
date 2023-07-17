@@ -23,7 +23,7 @@ function Experience() {
       </div>
       <div className="card">
         <div className="card_grid">
-          <div className="position">Front End Developer</div>
+          <div className="position">Frontend Developer</div>
           <div className="location"><SiGooglemaps className="card_icon"/>Manhattan, KS</div>
           <div className="company"><FaUniversity className="card_icon"/> Great Plains Partners Ventures Group</div>
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Feb. 2023 – Mar. 2023</div>

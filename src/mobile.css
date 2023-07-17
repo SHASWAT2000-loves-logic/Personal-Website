@@ -18,9 +18,6 @@
     line-height: 1.4;
   }
 
-  p{
-    font-size: 16px;
-  }
 
   /* hiding the scroll to top button */
 
@@ -98,7 +95,7 @@
     margin-bottom: 100px;
     margin-left: 0px;
     padding-left:25px;
-    padding-right: 15px;
+    padding-right: 25px;
   }
 
   /* Generalized changes in every component */
@@ -117,7 +114,13 @@
     margin-top: 30px;
     margin-bottom: 25px;
   }
+
   /* About component */
+
+  .about_section p{
+    line-height: 1.6;
+    font-size: 18px;
+  }  
 
   .about_icons{
     font-size: 40px;
@@ -126,7 +129,7 @@
   }
 
   .short_intro{
-    font-size:22px;
+    font-size:22px !important;
     line-height: 1.4;
     margin-top: 10px;
   }  
@@ -142,7 +145,7 @@
   }
   .edu_flex h3{
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.4;
     margin-bottom: 20px;
   }
   .edu_icon{
@@ -162,7 +165,7 @@
   }
   .edu_list{
     margin-left: 17px;
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 60px;
   }
 
@@ -197,8 +200,9 @@
   .dates,
   .company
   {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: -7px;
+    line-height: 1.4;
     
   }
   .card_icon{
