@@ -193,10 +193,10 @@
     display: block;
   }
   .position_description{
-    line-height: 1.5;
+    line-height: 1.6;
   }
   .position_description li{
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   .position{
     font-size: 26px;
