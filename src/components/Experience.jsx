@@ -14,24 +14,28 @@ function Experience() {
           <div className="position">Software Developer 1</div>
           <div className="location"><SiGooglemaps className="card_icon"/>Santa Fe, NM</div>
           <div className="company"><FaUniversity className="card_icon"/> New Mexico State Environment</div>
-          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Mar. 2023 – Present</div>
+          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Mar. 2023 – Feb. 2024</div>
         </div>
         <ul className="position_description">
-          <li>Building <span className="bold">websites</span> and <span className="bold">applications</span> for internal use and for the people of New Mexico</li>
+          <li>Built a <span className="bold">responsive</span> single page JavaScript <span className="bold">application</span> to display pollution levels across New Mexico in a tabular format by <span className="bold">fetching</span> data from a <span className="bold">RESTful API</span></li>
+          <li><span className="bold">Created</span> a PHP <span className="bold">application</span> that <span className="bold">recursively</span> scans <span className="bold">CSV</span> files for defaulters in online payments for pollution certificates </li>
+          <li>Managed and <span className="bold">maintained legacy applications</span> in PHP, ensuring continued functionality and incorporating enhancements as needed </li>
           <li>Technologies used: <span className="bold">HTML</span>, <span className="bold">CSS</span>, <span className="bold">Vanilla JavaScript</span>, <span className="bold">Node</span>, <span className="bold">Express</span></li>
         </ul>
       </div>
       <div className="card">
         <div className="card_grid">
-          <div className="position">Frontend Developer</div>
+          <div className="position">Web Developer</div>
           <div className="location"><SiGooglemaps className="card_icon"/>Remote</div>
           <div className="company"><FaUniversity className="card_icon"/> Great Plains Partners Ventures Group</div>
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Feb. 2023 – Mar. 2023</div>
         </div>
         <ul className="position_description">
-          <li>Worked as a contractor to <span className="bold">build</span> and <span className="bold">deploy</span> a <span className="bold">responsive</span> multi page website</li>
+          <li><span className="bold">Independently</span> designed and <span>developed</span> a <span className="bold">responsive multi-page website</span> from scratch using <span className="bold">HTML, CSS</span> and <span className="bold">React</span></li>
+          <li>Managed the entire <span className="bold">web development lifecycle</span>, from initial concept to final <span className="bold">deployment</span> on <span className="bold">Netlify</span>, ensuring seamless
+          functionality and <span className="bold">user experience</span></li>
+          <li><span className="bold">Utilized Chrome DevTools</span> to conduct <span className="bold">cross-device testing</span>, ensuring consistent <span className="bold">user experience</span> across all platforms</li>
           <li>Website link: <a href="https://greatplainsventures.com/" target="_blank"><span className="main_color">Great Plains Partners Ventures Group</span> </a></li>
-          <li>Technologies used: <span className="bold">React</span>, <span className="bold">Netlify</span></li>
         </ul>
       </div>
       <div className="card">
@@ -43,7 +47,8 @@ function Experience() {
         </div>
         <ul className="position_description">
           <li><span className="bold">Developed</span> a <span className="bold">web application</span> to streamline and digitalize the procurement and requisition process from paper forms to electronic forms</li>
-          <li><span className="bold">Created</span> an interactive dashboard for users to access all the required forms at one place</li>
+          <li><span className="bold">Enhanced user experience</span> of the e-forms by implementing <span className="bold">dynamic error messaging</span>, providing users with clear,
+          real-time feedback and actionable solutions</li>
           <li>Technologies used: <span className="bold">React</span>, <span className="bold">PostgreSQL</span>, <span className="bold">Bootswatch</span></li>
         </ul>
       </div>
@@ -56,8 +61,8 @@ function Experience() {
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Sep. 2022 – Dec. 2022</div>
         </div>
         <ul className="position_description">
-          <li>Worked on a <span className="bold">novel</span> method to transform ceramic 3-D printers intp printing clay products</li>
-          <li> <span className="bold">Debugged</span> <a href="https://ecraft2learn.github.io/uui/beetleblocks/" target="_blank"><span className="main_color">Beetle Blocks</span> </a>, a JavaScript application for 3D design and fabrication, to search for the data structure that stores the path (coordinates) of 3D shapes during design</li>
+          <li>Worked on a <span className="bold">novel</span> method to transform ceramic 3D printers into printing clay products</li>
+          <li> <span className="bold">Debugged</span> <a href="https://ecraft2learn.github.io/uui/beetleblocks/" target="_blank"><span className="main_color">Beetle Blocks</span> </a>, a JavaScript application for 3D design and fabrication, to search the data structure that stores the path (coordinates) of 3D shapes during design</li>
         </ul>
       </div>
 
@@ -67,10 +72,10 @@ function Experience() {
           <div className="position">Research Intern</div>
           <div className="location"><SiGooglemaps className="card_icon"/>Palo Alto, CA</div>
           <div className="company"><FaUniversity className="card_icon"/> Stanford University</div>
-          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Aug. 2022 – Aug. 2022</div>
+          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Jul. 2022 – Aug. 2022</div>
         </div>
         <ul className="position_description">
-          <li>Project – <span className="bold">Vision</span> Based Navigation in TurtleBots (Supervisors- Dr. Marco Pavone and Dr. Shreyas Kousik)</li>
+          <li>Project – <span className="bold">Vision</span> Based <span className="bold">Navigation</span> in TurtleBots (Supervisor- Dr. Marco Pavone @ Autonomous Systems Lab)</li>
           <li><span className="bold">Collected</span> training data from TurtleBot cameras using <span className="bold">Rosbag</span> at 5 frames/sec</li>
           <li>Used a pretrained vgg 16 <span className="bold">tensorflow model</span>  to create a Convolutional Neural Network for <span className="bold">image classification</span>  to detect static obstacles in path</li>
           <li>CNN model <span className="bold">enabled</span>  the TurtleBot to make <span className="bold">80%</span>  correct decisions while autonomously navigating through a driving course</li>
@@ -87,7 +92,7 @@ function Experience() {
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>May 2022 – July 2022</div>
         </div>
         <ul className="position_description">
-          <li>Project – Form + Function 4-D Printing (Supervisor - Dr. Richard Voyles)</li>
+          <li>Project – Form + Function 4-D Printing (Supervisor - Dr. Richard Voyles @ Collaborative Robotics Lab)</li>
           <li>Explored a <span className="bold">novel</span>  mechanism to <span className="bold">model</span>  a bicyclist performance by using a robotic bicycle crank</li>
           <li><span className="bold">Created</span>  CAD model of a customized bicycle crank for 3-D printing and externally <span className="bold">embedded</span>  electrical components to calculate resistance change in the bicycle crank during motion</li>
           <li><span className="bold">Developed</span> a <span className="bold">webpage</span> to display the resistance change in the bicycle based on amount of stress on the crank</li>
@@ -135,7 +140,7 @@ function Experience() {
         </div>
         <ul className="position_description">
           <li><span className="bold">Tutored</span> Java, Python, Calculus I, II, III and General Physics I and II</li>
-          <li><span className="bold">Assisted</span> students with homework, problem sets and programming assignments</li>
+          <li><span className="bold">Assisted</span> students both one-on-one and in groups with homework, problem sets and programming assignments</li>
           <li><span className="bold">Enhanced</span> tutoring skills through weekly trainings and feedback</li>
         </ul>
       </div>

@@ -9,10 +9,18 @@ function News() {
 
       <div className="news_grid">
         <div className="news_date">
+          <h3><BiCalendar className="news_icon"/>Aug 2024</h3>
+        </div>
+        <div className="news_content">
+          <p>Started my masters degree in computer science at Purdue</p>
+        </div>
+      </div>
+      <div className="news_grid">
+        <div className="news_date">
           <h3><BiCalendar className="news_icon"/>Mar 2023</h3>
         </div>
         <div className="news_content">
-          <p>Started as software developer 1 at the New Mexico State Environment</p>
+          <p>Started as software developer 1 at the New Mexico State Environment Department</p>
         </div>
       </div>
 
@@ -41,18 +49,7 @@ function News() {
         <div className="news_content">
           <p>Accepted the position of undergraduate research assistant at the Hand and Machine lab at UNM</p>
         </div>
-      </div>
-
-      <div className="news_grid">
-        <div className="news_date">
-          <h3><BiCalendar className="news_icon"/>Aug 2022</h3>
-        </div>
-        <div className="news_content">
-          <p>Started the internship at Stanford University; part of NASA-ULI program</p>
-        </div>
-      </div>
-
-      
+      </div> 
 
     </div>
   )
