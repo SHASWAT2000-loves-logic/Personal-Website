@@ -11,7 +11,33 @@ function Experience() {
 
       <div className="card">
         <div className="card_grid">
-          <div className="position">Software Developer 1</div>
+          <div className="position">Software Engineer Intern</div>
+          <div className="location"><SiGooglemaps className="card_icon"/>Cabot, AR</div>
+          <div className="company"><FaUniversity className="card_icon"/> Shurley Instructional Materials</div>
+          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>May 2025 – Present</div>
+        </div>
+        <ul className="position_description">
+          <li>Designing and building a new website using HTML, CSS, JavaScript and JSP</li>          
+        </ul>
+      </div>
+      <div className="card">
+        <div className="card_grid">
+          <div className="position">Graduate Teaching Assistant</div>
+          <div className="location"><SiGooglemaps className="card_icon"/>West Lafayette, IN</div>
+          <div className="company"><FaUniversity className="card_icon"/> Purdue University</div>
+          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Aug. 2024 – Present</div>
+        </div>
+        <ul className="position_description">
+          <li>Graduate Teaching Assistant <span className="bold">(GTA)</span> for CS 159 - Programming Applications for Engineers - an introductory course in C programming language</li>
+          <li>Conducting <span className="bold">weekly lab session of 30 students</span>, providing guidance to students for labs and lab quizzes</li>
+          <li>Grading <span className="bold">programming assignments and homework</span> according to class rubric and guidelines</li>
+          <li>Holding <span className="bold">online and offline office hours</span> to help students and provided feedback on submitted assignments</li>
+        </ul>
+      </div>
+
+      <div className="card">
+        <div className="card_grid">
+          <div className="position">Software Development Engineer 1</div>
           <div className="location"><SiGooglemaps className="card_icon"/>Santa Fe, NM</div>
           <div className="company"><FaUniversity className="card_icon"/> New Mexico State Environment</div>
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Mar. 2023 – Feb. 2024</div>

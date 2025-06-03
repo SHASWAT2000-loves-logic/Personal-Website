@@ -12,12 +12,12 @@ function Education() {
       <div className="edu_content">
         <p>Master of Science (M.S) in Computer Science</p>
         <ul className="edu_list">
-          <li>GPA – N/A</li>
+          <li>GPA – 3.85/4.0</li>
         </ul>
       </div>
       <div className="course_content">
         <h3>Relevant Coursework – </h3>
-        <p>Computer Networks | Human-Robot Interaction</p>
+        <p>Natural Language Processing | Parallel Computing | Computer Networks & Data Communication | Human-Robot Interaction</p>
       </div>
       <div className="edu_flex">
        <h3><FaUniversity className="edu_icon"/> University of New Mexico | Albuquerque, NM</h3>
