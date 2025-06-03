@@ -39,7 +39,7 @@ function Experience() {
         <div className="card_grid">
           <div className="position">Software Development Engineer 1</div>
           <div className="location"><SiGooglemaps className="card_icon"/>Santa Fe, NM</div>
-          <div className="company"><FaUniversity className="card_icon"/> New Mexico State Environment</div>
+          <div className="company"><FaUniversity className="card_icon"/> New Mexico Environment Department</div>
           <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Mar. 2023 – Feb. 2024</div>
         </div>
         <ul className="position_description">
@@ -76,19 +76,6 @@ function Experience() {
           <li><span className="bold">Enhanced user experience</span> of the e-forms by implementing <span className="bold">dynamic error messaging</span>, providing users with clear,
           real-time feedback and actionable solutions</li>
           <li>Technologies used: <span className="bold">React</span>, <span className="bold">PostgreSQL</span>, <span className="bold">Bootswatch</span></li>
-        </ul>
-      </div>
-
-      <div className="card">
-        <div className="card_grid">
-          <div className="position">Undergraduate Research Assistant</div>
-          <div className="location"><SiGooglemaps className="card_icon"/>Albuquerque, NM</div>
-          <div className="company"><FaUniversity className="card_icon"/>University of New Mexico</div>
-          <div className="dates"><BsFillCalendar2MinusFill className="card_icon"/>Sep. 2022 – Dec. 2022</div>
-        </div>
-        <ul className="position_description">
-          <li>Worked on a <span className="bold">novel</span> method to transform ceramic 3D printers into printing clay products</li>
-          <li> <span className="bold">Debugged</span> <a href="https://ecraft2learn.github.io/uui/beetleblocks/" target="_blank"><span className="main_color">Beetle Blocks</span> </a>, a JavaScript application for 3D design and fabrication, to search the data structure that stores the path (coordinates) of 3D shapes during design</li>
         </ul>
       </div>
 

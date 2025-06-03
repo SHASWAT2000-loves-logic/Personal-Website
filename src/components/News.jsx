@@ -17,7 +17,7 @@ function News() {
       </div>
       <div className="news_grid">
         <div className="news_date">
-          <h3><BiCalendar className="news_icon"/>March 2025</h3>
+          <h3><BiCalendar className="news_icon"/>Mar 2025</h3>
         </div>
         <div className="news_content">
           <p>Accepted to the Cornell, Maryland, Max Planck Pre-Doctoral Research School (CMMRS) 2025 in Computer Science</p>
@@ -36,7 +36,7 @@ function News() {
           <h3><BiCalendar className="news_icon"/>Aug 2024</h3>
         </div>
         <div className="news_content">
-          <p>Started my masters degree in computer science at Purdue</p>
+          <p>Started my master's degree in computer science at Purdue</p>
         </div>
       </div>
       <div className="news_grid">
